@@ -5,13 +5,13 @@ import java.util.HashMap;
  */
 interface Graph {
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
 	public int V();
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
@@ -24,7 +24,7 @@ interface Graph {
 	 */
 	public void addEdge(int v, int w);
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      v     { parameter_description }
 	 *
@@ -46,19 +46,19 @@ interface Graph {
  */
 class Graphh implements Graph {
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	private final int vertices;
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	private int edges;
 	/**
-	 * { var_description }
+	 * { var_description }.
 	 */
 	public Bag<Integer>[] adj;
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
@@ -66,7 +66,7 @@ class Graphh implements Graph {
 		return vertices;
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
@@ -103,13 +103,13 @@ class Graphh implements Graph {
 		adj[w].add(v);
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      v     { parameter_description }
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<Integer> adj(int v) {
+	public Iterable<Integer> adj(final int v) {
 		return adj[v];
 	}
 	/**
@@ -120,7 +120,7 @@ class Graphh implements Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(int v, int w) {
+	public boolean hasEdge(final int v, final int w) {
 		for (int k : adj[v]) {
 			if (k == w) {
 				return true;
@@ -132,7 +132,7 @@ class Graphh implements Graph {
 
 }
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
 	/**
@@ -142,7 +142,7 @@ public final class Solution {
 		//empty.
 	}
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      args  The arguments
 	 */
@@ -159,7 +159,8 @@ public final class Solution {
 		}
 		for (int j = 0; j < edges; j++) {
 			String[] key = scan.nextLine().split(" ");
-			g.addEdge(Integer.parseInt(key[0]), Integer.parseInt(key[1]));
+			g.addEdge(
+	Integer.parseInt(key[0]), Integer.parseInt(key[1]));
 
 		}
 		System.out.println(g.V() + " vertices, " + g.E() + " edges");
