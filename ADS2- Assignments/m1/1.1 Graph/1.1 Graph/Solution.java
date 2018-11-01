@@ -105,7 +105,7 @@ class Graphh implements Graph {
 	/**
 	 * { function_description }.
 	 *
-	 * @param      vertices     { parameter_description }
+	 * @param      v     { parameter_description }
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
@@ -115,7 +115,7 @@ class Graphh implements Graph {
 	/**
 	 * Determines if it has edge.
 	 *
-	 * @param      vertices     { parameter_description }
+	 * @param      v     { parameter_description }
 	 * @param      w     { parameter_description }
 	 *
 	 * @return     True if has edge, False otherwise.
