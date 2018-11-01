@@ -9,13 +9,13 @@ interface Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int V();
+	public int Vertices();
 	/**
 	 * { function_description }.
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int E();
+	public int Edges();
 	/**
 	 * Adds an edge.
 	 *
@@ -62,7 +62,7 @@ class Graphh implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int V() {
+	public int Vertices() {
 		return vertices;
 	}
 	/**
@@ -70,7 +70,7 @@ class Graphh implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int E() {
+	public int Edges() {
 		return edges;
 	}
 	/**
@@ -89,39 +89,39 @@ class Graphh implements Graph {
 	/**
 	 * Adds an edge.
 	 *
-	 * @param      v     { parameter_description }
+	 * @param      Vertices     { parameter_description }
 	 * @param      w     { parameter_description }
 	 */
-	public void addEdge(final int v, final int w) {
-		if (v == w) {
+	public void addEdge(final int Vertices, final int w) {
+		if (Vertices == w) {
 			return;
 		}
-		if (!hasEdge(v, w)) {
+		if (!hasEdge(Vertices, w)) {
 			edges++;
 		}
-		adj[v].add(w);
-		adj[w].add(v);
+		adj[Vertices].add(w);
+		adj[w].add(Vertices);
 	}
 	/**
 	 * { function_description }.
 	 *
-	 * @param      v     { parameter_description }
+	 * @param      Vertices     { parameter_description }
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<Integer> adj(final int v) {
-		return adj[v];
+	public Iterable<Integer> adj(final int Vertices) {
+		return adj[Vertices];
 	}
 	/**
 	 * Determines if it has edge.
 	 *
-	 * @param      v     { parameter_description }
+	 * @param      Vertices     { parameter_description }
 	 * @param      w     { parameter_description }
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(final int v, final int w) {
-		for (int k : adj[v]) {
+	public boolean hasEdge(final int Vertices, final int w) {
+		for (int k : adj[Vertices]) {
 			if (k == w) {
 				return true;
 			}
@@ -163,7 +163,7 @@ public final class Solution {
 	Integer.parseInt(key[0]), Integer.parseInt(key[1]));
 
 		}
-		System.out.println(g.V() + " vertices, " + g.E() + " edges");
+		System.out.println(g.Vertices() + " vertices, " + g.Edges() + " edges");
 		if (vertices <= 1 && edges <= 1) {
 			System.out.println("No edges");
 			return;

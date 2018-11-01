@@ -33,14 +33,18 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:12:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:12:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:12:20: Name 'Vertices' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:18:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:18:20: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:18:20: Name 'Edges' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:25:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:33:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:42:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:59:31: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:65:20: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:73:20: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:65:20: Name 'Vertices' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:73:20: Name 'Edges' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:95:39: Name 'Vertices' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:112:48: Name 'Vertices' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:123:42: Name 'Vertices' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:166: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 16 errors.
