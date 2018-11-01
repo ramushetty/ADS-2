@@ -56,7 +56,7 @@ class Graphh implements Graph {
     /**
      * { var_description }.
      */
-    public Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
     /**
      * { function_description }.
      *
@@ -174,7 +174,7 @@ g.vertices() + " vertices, " + g.edges() + " edges");
             StringBuilder s = new StringBuilder();
             for (int i = 0; i < vertices; i++) {
                 s.append(map.get(i) + ": ");
-                for (int k : g.adj[i]) {
+                for (int k : g.adj(i)) {
                     s.append(map.get(k) + " ");
                 }
                 s.append("\n");

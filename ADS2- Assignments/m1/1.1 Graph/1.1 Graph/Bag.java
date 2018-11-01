@@ -15,11 +15,11 @@ import java.util.NoSuchElementException;
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * { var_description }.
+     * { variale n}.
      */
     private int n;         // number of elements in bag
     /**
-     * { var_description }.
+     * { node }.
      */
     private Node first;    // beginning of bag
 
@@ -30,11 +30,11 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }.
+         * { item }.
          */
         private Item item;
         /**
-         * { var_description }.
+         * { next node }.
          */
         private Node next;
     }
@@ -66,9 +66,9 @@ public class Bag<Item> implements Iterable<Item> {
       * Return the number of items in the bag.
       */
     /**
-     * { function_description }.
+     * { returns size }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { return_value }
      */
     public int size() {
         return n;
@@ -78,7 +78,7 @@ public class Bag<Item> implements Iterable<Item> {
       * Add the item to the bag.
       */
     /**
-     * { function_description }.
+     * { adding item}.
      *
      * @param      item  The item
      */
@@ -95,9 +95,9 @@ public class Bag<Item> implements Iterable<Item> {
       * Return an iterator that iterates over the items in the bag.
       */
     /**
-     * { function_description }.
+     * { iterator }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { return_values }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();
@@ -110,7 +110,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }.
+         * { current }.
          */
         private Node current = first;
         /**
@@ -122,15 +122,15 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * { function_description }.
+         * { remove }.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }.
+         * { next }.
          *
-         * @return     { description_of_the_return_value }
+         * @return     {return_value }
          */
         public Item next() {
             if (!hasNext())  {
