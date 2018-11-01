@@ -48,7 +48,7 @@ class Graphh implements Graph {
 	/**
 	 * { var_description }.
 	 */
-	private final int vertices;
+	private final int vertex;
 	/**
 	 * { var_description }.
 	 */
@@ -63,7 +63,7 @@ class Graphh implements Graph {
 	 * @return     { description_of_the_return_value }
 	 */
 	public int vertices() {
-		return vertices;
+		return vertex;
 	}
 	/**
 	 * { function_description }.
@@ -79,7 +79,7 @@ class Graphh implements Graph {
 	 * @param      ver   The version
 	 */
 	Graphh(final int ver) {
-		this.vertices = ver;
+		this.vertex = ver;
 		this.edges = 0;
 		adj = (Bag<Integer>[]) new Bag[ver];
 		for (int i = 0; i < ver; i++) {
@@ -89,18 +89,18 @@ class Graphh implements Graph {
 	/**
 	 * Adds an edge.
 	 *
-	 * @param      vertices     { parameter_description }
+	 * @param      v     { parameter_description }
 	 * @param      w     { parameter_description }
 	 */
-	public void addEdge(final int vertices, final int w) {
-		if (vertices == w) {
+	public void addEdge(final int v, final int w) {
+		if (v == w) {
 			return;
 		}
-		if (!hasEdge(vertices, w)) {
+		if (!hasEdge(v, w)) {
 			edges++;
 		}
-		adj[vertices].add(w);
-		adj[w].add(vertices);
+		adj[v].add(w);
+		adj[w].add(v);
 	}
 	/**
 	 * { function_description }.
@@ -109,8 +109,8 @@ class Graphh implements Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<Integer> adj(final int vertices) {
-		return adj[vertices];
+	public Iterable<Integer> adj(final int v) {
+		return adj[v];
 	}
 	/**
 	 * Determines if it has edge.
@@ -120,8 +120,8 @@ class Graphh implements Graph {
 	 *
 	 * @return     True if has edge, False otherwise.
 	 */
-	public boolean hasEdge(final int vertices, final int w) {
-		for (int k : adj[vertices]) {
+	public boolean hasEdge(final int v, final int w) {
+		for (int k : adj[v]) {
 			if (k == w) {
 				return true;
 			}

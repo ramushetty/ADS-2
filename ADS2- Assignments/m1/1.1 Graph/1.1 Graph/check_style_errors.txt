@@ -38,9 +38,10 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:33:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:42:9: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:59:31: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:95:39: 'vertices' hides a field. [HiddenField]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:112:48: 'vertices' hides a field. [HiddenField]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:123:42: 'vertices' hides a field. [HiddenField]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:108:12: Unused @param tag for 'vertices'. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:112:48: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:118:12: Unused @param tag for 'vertices'. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:123:42: Expected @param tag for 'v'. [JavadocMethod]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m1\1.1 Graph\1.1 Graph\Solution.java:166: Line is longer than 80 characters (found 88). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 13 errors.
