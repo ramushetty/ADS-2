@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.HashMap;
+// import java.util.HashMap;
 /**
  * Interface for graph.
  */
@@ -148,15 +148,15 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        HashMap<Integer, String> map = new HashMap<>();
+        // HashMap<Integer, String> map = new HashMap<>();
         String names = scan.nextLine();
         int vertices = Integer.parseInt(scan.nextLine());
         int edges = Integer.parseInt(scan.nextLine());
         Graphh g = new Graphh(vertices);
         String[] keys = scan.nextLine().split(",");
-        for (int i = 0; i < vertices; i++) {
-            map.put(i, keys[i]);
-        }
+        // for (int i = 0; i < vertices; i++) {
+        //     map.put(i, keys[i]);
+        // }
         for (int j = 0; j < edges; j++) {
             String[] key = scan.nextLine().split(" ");
             g.addEdge(
