@@ -48,6 +48,9 @@ public class Bag<Item> implements Iterable<Item> {
     /**
       * Create an empty stack.
       */
+    /**
+     * Constructs the object.
+     */
     public Bag() {
         first = null;
         n = 0;
@@ -56,6 +59,11 @@ public class Bag<Item> implements Iterable<Item> {
     /**
       * Is the BAG empty?
       */
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
@@ -63,6 +71,11 @@ public class Bag<Item> implements Iterable<Item> {
     /**
       * Return the number of items in the bag.
       */
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return n;
     }
@@ -97,7 +110,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     // an iterator, doesn't implement remove() since it's optional
-    
+
     /**
      * Class for list iterator.
      */
@@ -117,7 +130,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * { function_description }.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
