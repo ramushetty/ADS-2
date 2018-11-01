@@ -1,22 +1,83 @@
 import java.util.Scanner;
 import java.util.HashMap;
+/**
+ * Interface for graph.
+ */
 interface Graph {
+	/**
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
     public int V();
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int E();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     public void addEdge(int v, int w);
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w);
 }
+/**
+ * Class for graphh.
+ */
 class Graphh implements Graph {
+	/**
+	 * { var_description }
+	 */
 	private final int vertices;
-	int edges;
+	/**
+	 * { var_description }
+	 */
+	private int edges;
+	/**
+	 * { var_description }
+	 */
 	public Bag<Integer>[] adj;
+	/**
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int V() {
 		return vertices;
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public int E() {
 		return edges;
 	}
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      ver   The version
+	 */
 	Graphh(final int ver) {
 		this.vertices = ver;
 		this.edges = 0;
@@ -25,6 +86,12 @@ class Graphh implements Graph {
 			adj[i] = new Bag<Integer>();
 		}
 	}
+	/**
+	 * Adds an edge.
+	 *
+	 * @param      v     { parameter_description }
+	 * @param      w     { parameter_description }
+	 */
 	public void addEdge(final int v, final int w) {
 		if (v == w) {
 			return;
@@ -35,9 +102,24 @@ class Graphh implements Graph {
 		adj[v].add(w);
 		adj[w].add(v);
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      v     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
     public Iterable<Integer> adj(int v) {
     	return adj[v];
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w) {
     	for (int k : adj[v]) {
     		if (k == w) {
@@ -49,10 +131,21 @@ class Graphh implements Graph {
 
 
 }
+/**
+ * { item_description }
+ */
 public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
 	private Solution() {
 		//empty.
 	}
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		HashMap<Integer, String> map = new HashMap<>();
@@ -102,3 +195,4 @@ public final class Solution {
 		}
 	}
 }
+
