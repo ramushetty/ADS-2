@@ -21,10 +21,20 @@ import java.util.NoSuchElementException;
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Bag<Item> implements Iterable<Item> {
-    private int N;         // number of elements in bag
+    /**
+     * { var_description }.
+     */
+    private int n;         // number of elements in bag
+    /**
+     * { var_description }.
+     */
     private Node first;    // beginning of bag
 
     // helper linked list class
+
+    /**
+     * Class for node.
+     */
     private class Node {
         private Item item;
         private Node next;
@@ -35,7 +45,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
     /**
@@ -49,35 +59,67 @@ public class Bag<Item> implements Iterable<Item> {
       * Return the number of items in the bag.
       */
     public int size() {
-        return N;
+        return n;
     }
 
     /**
       * Add the item to the bag.
       */
-    public void add(Item item) {
+    /**
+     * { function_description }.
+     *
+     * @param      item  The item
+     */
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
 
     /**
       * Return an iterator that iterates over the items in the bag.
       */
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
 
     // an iterator, doesn't implement remove() since it's optional
+    
+    /**
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
+        /**
+         * { var_description }.
+         */
         private Node current = first;
-
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext()  {
+            return current != null;
+        }
+        /**
+         * { function_description }.
+         */
+        public void remove() { 
+            throw new UnsupportedOperationException();
+        }
+        /**
+         * { function_description }.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
