@@ -9,7 +9,7 @@ interface Graph {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public int vertices();
+	int vertices();
 	/**
 	 * { function_description }.
 	 *
@@ -163,7 +163,8 @@ public final class Solution {
 	Integer.parseInt(key[0]), Integer.parseInt(key[1]));
 
 		}
-		System.out.println(g.vertices() + " vertices, " + g.edges() + " edges");
+		System.out.println(
+g.vertices() + " vertices, " + g.edges() + " edges");
 		if (vertices <= 1 && edges <= 1) {
 			System.out.println("No edges");
 			return;
