@@ -69,7 +69,7 @@ public final class Solution {
 			g.addEdge(Integer.parseInt(key[0]), Integer.parseInt(key[1]));
 
 		}
-		System.out.println(g.V() + "vertices, " + g.E() + " edges");
+		System.out.println(g.V() + " vertices, " + g.E() + " edges");
 		if (vertices <= 1 && edges <= 1) {
 			System.out.println("No edges");
 			return;
