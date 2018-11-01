@@ -173,9 +173,9 @@ g.vertices() + " vertices, " + g.edges() + " edges");
         case "List":
             StringBuilder s = new StringBuilder();
             for (int i = 0; i < vertices; i++) {
-                s.append(map.get(i) + ": ");
+                s.append(keys[i] + ": ");
                 for (int k : g.adj(i)) {
-                    s.append(map.get(k) + " ");
+                    s.append(keys[k] + " ");
                 }
                 s.append("\n");
             }
