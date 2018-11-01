@@ -5,37 +5,37 @@ import java.util.HashMap;
  */
 interface Graph {
     /**
-     * { function_description }.
+     * { returns number of vertices  }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns no of vertices }
      */
     int vertices();
     /**
-     * { function_description }.
+     * { returns number of edges }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { return_value }
      */
     int edges();
     /**
      * Adds an edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v     { vertex }
+     * @param      w     { vertex }
      */
     void addEdge(int v, int w);
     /**
-     * { function_description }.
+     * { returns vertices present in it }.
      *
-     * @param      v     { parameter_description }
+     * @param      v     { vertex }
      *
-     * @return     { description_of_the_return_value }
+     * @return     { returns vertices }
      */
     Iterable<Integer> adj(int v);
     /**
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v     { vextex }
+     * @param      w     { vertex }
      *
      * @return     True if has edge, False otherwise.
      */
@@ -46,36 +46,36 @@ interface Graph {
  */
 class Graphh implements Graph {
     /**
-     * { var_description }.
+     * { vertices }.
      */
     private final int vertex;
     /**
-     * { var_description }.
+     * { edges }.
      */
     private int edges;
     /**
-     * { var_description }.
+     * {array bag contains  vertices and its adjacencies}.
      */
     private Bag<Integer>[] adj;
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * { returns number of vertices }.
+     * time complexity O(1)
+     * @return     { returns certices }
      */
     public int vertices() {
         return vertex;
     }
     /**
-     * { function_description }.
-     *
-     * @return     { description_of_the_return_value }
+     * { returns edges in a bag }.
+     * time complexity O(1)
+     * @return     { returns number of edges }
      */
     public int edges() {
         return edges;
     }
     /**
      * Constructs the object.
-     *
+     * time complexity O(vertices)
      * @param      ver   The version
      */
     Graphh(final int ver) {
@@ -88,9 +88,9 @@ class Graphh implements Graph {
     }
     /**
      * Adds an edge.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * time complexity O(1)
+     * @param      v     { vextex }
+     * @param      w     { vertex }
      */
     public void addEdge(final int v, final int w) {
         if (v == w) {
@@ -103,20 +103,20 @@ class Graphh implements Graph {
         adj[w].add(v);
     }
     /**
-     * { function_description }.
+     * {returns vertices adjacent to vertex}.
      *
-     * @param      v     { parameter_description }
-     *
-     * @return     { description_of_the_return_value }
+     * @param      v     { parameter}
+     * time complexity O(1).
+     * @return     { return_value }
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
     /**
      * Determines if it has edge.
-     *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * time comlexity O(edge).
+     * @param      v     { parameter }
+     * @param      w     { parameter }
      *
      * @return     True if has edge, False otherwise.
      */
@@ -132,7 +132,7 @@ class Graphh implements Graph {
 
 }
 /**
- * { item_description }.
+ * { solution class }.
  */
 public final class Solution {
     /**
@@ -142,8 +142,8 @@ public final class Solution {
         //empty.
     }
     /**
-     * { function_description }.
-     *
+     * { main function }.
+     * time complexity of O(1).
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
