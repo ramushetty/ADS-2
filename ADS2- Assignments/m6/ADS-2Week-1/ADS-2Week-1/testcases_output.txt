@@ -19,8 +19,8 @@ Your Output:
 3: 2 
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -45,8 +45,8 @@ Your Output:
 
 0 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -72,8 +72,8 @@ Your Output:
 0 - 0.0
 1 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -112,8 +112,8 @@ Your Output:
 1 - 0.0
 2 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -146,8 +146,8 @@ Your Output:
 1 - 0.0
 2 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -186,8 +186,8 @@ Your Output:
 1 - 0.0
 2 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -246,8 +246,8 @@ Your Output:
 1 - 0.0
 2 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -305,8 +305,8 @@ Your Output:
 0 - 0.0
 1 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -380,7 +380,7 @@ Your Output:
 1 - 0.0
 2 - 0.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at PageRank.getPR(Solution.java:16)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:17)
+	at Solution.main(Solution.java:69)
 ----------------------------------------
 

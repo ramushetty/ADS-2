@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.HashMap;
 
 class PageRank {
 	Digraph di;
@@ -15,6 +16,17 @@ class PageRank {
 		for (int k : di.adj(v)) {
 			ad[i] = k;
 			i++;
+		}
+		return pagerank(v, ad);
+	}
+	public double pagerank(int v , int[] ad) {
+		HashMap<Integer, Double> map = new HashMap<>();
+		int allver = di.V();
+		for (int j = 0; j < allver; j++) {
+			map.put(j, (double)1/allver);
+		}
+		for (int i = 0 ; i < 1000 ; i++) {
+
 		}
 		return 0.0;
 	}
