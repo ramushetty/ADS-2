@@ -1,0 +1,41 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:1: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:2:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:3: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:3:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:4: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:4:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:5:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:12:15: Parameter G should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:12:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:25:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:25:22: Parameter G should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:25:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:25:31: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:36: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:39: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:42:19: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:48: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:51: Line is longer than 80 characters (found 92). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:54:21: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:79:30: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:79:37: Parameter w should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:98:33: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:98:40: Parameter w should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:105:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:105:33: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:106:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:107: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:108: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:108:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\CC.java:108:94: '-' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 30 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
