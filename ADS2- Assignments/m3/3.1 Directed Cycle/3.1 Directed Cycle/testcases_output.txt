@@ -5,7 +5,6 @@ Cycle doesn't exists.
 Your Output: 
 ,.
 Cycle doesn't exists.
-d
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -15,7 +14,6 @@ Cycle doesn't exists.
 Your Output: 
 ,.
 Cycle doesn't exists.
-d
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -65,7 +63,6 @@ Cycle doesn't exists.
 Your Output: 
 ,.
 Cycle doesn't exists.
-d
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########

@@ -24,12 +24,13 @@ public final class Solution {
         }
         DirectedCycle dicycle = new DirectedCycle(digraph);
         System.out.println(",.");
-        
+
         if (dicycle.hasCycle()) {
             System.out.println("Cycle exists.");
+        System.out.println("d");
+            
         } else {
             System.out.println("Cycle doesn't exists.");
         }
-        System.out.println("d");
     }
 }
