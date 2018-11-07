@@ -46,7 +46,7 @@ public class Bipartite {
      * @param      g     g of type Digraph.
      * @param      v     v of type int.
      * Time complexity O(Edges)
-     * 
+     *
      */
     private void dfs(final Graph g, final int v) {
         marked[v] = true;
