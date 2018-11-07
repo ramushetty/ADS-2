@@ -83,10 +83,9 @@ Audit done.
 Checkstyle ends with 42 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:11: First sentence should end with a period. [JavadocStyle]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m3\3.2 Bipartite\3.2 Bipartite\Solution.java:16: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m3\3.2 Bipartite\3.2 Bipartite\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m3\3.2 Bipartite\3.2 Bipartite\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

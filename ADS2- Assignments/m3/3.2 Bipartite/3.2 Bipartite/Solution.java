@@ -9,7 +9,7 @@ public final class Solution {
     private Solution() {
     }
     /**
-     * main function
+     * main function.
      *
      * @param      args  The arguments
      * Time complexity O(N).
