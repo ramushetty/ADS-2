@@ -36,6 +36,4 @@ Checkstyle ends with 30 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m2\2.1 CC_Percolation\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
