@@ -27,7 +27,6 @@ public final class Solution {
 
         if (dicycle.hasCycle()) {
             System.out.println("Cycle exists.");
-        System.out.println("d");
             
         } else {
             System.out.println("Cycle doesn't exists.");

@@ -23,7 +23,6 @@ Cycle exists.
 Your Output: 
 ,.
 Cycle exists.
-d
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -33,7 +32,6 @@ Cycle exists.
 Your Output: 
 ,.
 Cycle exists.
-d
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -43,7 +41,6 @@ Cycle exists.
 Your Output: 
 ,.
 Cycle exists.
-d
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -53,7 +50,6 @@ Cycle exists.
 Your Output: 
 ,.
 Cycle exists.
-d
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -72,6 +68,5 @@ Cycle exists.
 Your Output: 
 ,.
 Cycle exists.
-d
 ----------------------------------------
 
