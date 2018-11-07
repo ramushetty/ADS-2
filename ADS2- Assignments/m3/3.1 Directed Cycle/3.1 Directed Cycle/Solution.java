@@ -23,7 +23,6 @@ public final class Solution {
             digraph.addEdge(scan.nextInt(), scan.nextInt());
         }
         DirectedCycle dicycle = new DirectedCycle(digraph);
-        System.out.println(",.");
 
         if (dicycle.hasCycle()) {
             System.out.println("Cycle exists.");
