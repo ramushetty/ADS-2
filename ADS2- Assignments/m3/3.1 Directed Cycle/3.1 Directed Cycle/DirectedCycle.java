@@ -41,7 +41,7 @@ public class DirectedCycle {
      * @param      g     g of type Digraph.
      * @param      v     v of type int.
      * Time complexity O(Edges)
-     * 
+     *
      */
     private void dfs(final Digraph g, final int v) {
         onStack[v] = true;
