@@ -246,7 +246,6 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:29:69: ')' is preceded with whitespace. [ParenPad]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:30:32: '1000' is a magic number. [MagicNumber]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:31: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:33: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:34: Line is longer than 80 characters (found 140). [LineLength]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:35: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:38:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'calsquare' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'calsquare' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -262,7 +261,7 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:61:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:61:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 38 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
