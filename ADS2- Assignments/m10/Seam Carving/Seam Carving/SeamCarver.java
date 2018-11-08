@@ -1,9 +1,11 @@
 
 public class SeamCarver {
 	// create a seam carver object based on the given picture
+	Picture pic;
 	int wid;
 	int hei;
 	public SeamCarver(Picture picture) {
+		pic =  picture;
 		wid = picture.width();
 		hei  = picture.height();
 	}
@@ -25,6 +27,10 @@ public class SeamCarver {
 	public double energy(int x, int y) {
 		if (x == 0 || y == 0) {
 			return 1000;
+		}
+		else {
+			int rgb = pic.getRGB(x, y);
+			System.out.println(rgb);
 		}
 		return 0;
 	}
