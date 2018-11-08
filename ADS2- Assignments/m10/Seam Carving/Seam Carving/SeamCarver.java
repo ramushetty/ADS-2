@@ -5,7 +5,7 @@ public class SeamCarver {
 	int hei;
 	public SeamCarver(Picture picture) {
 		wid = picture.width();
-		int hei  = picture.height();
+		hei  = picture.height();
 	}
 	// current picture
 	public Picture picture() {
