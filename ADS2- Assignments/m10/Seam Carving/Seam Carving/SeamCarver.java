@@ -29,7 +29,7 @@ public class SeamCarver {
 			return 1000;
 		}
 		else {
-			int rgb = pic.getRGB(x, y);
+			double rgb = Math.sqrt(pic.getRGB(x, y));
 			System.out.println(rgb);
 		}
 		return 0;
