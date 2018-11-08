@@ -18,7 +18,6 @@ public class SeamCarver {
 
 	// height of current picture
 	public int height() {
-		System.out.println("height");
 		return hei;
 	}
 
