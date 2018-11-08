@@ -3,22 +3,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *  The {@code MinPQ} class represents a priority queue of generic keys.
- *  It supports the usual <em>insert</em> and <em>delete-the-minimum</em>
- *  operations, along with methods for peeking at the minimum key,
- *  testing if the priority queue is empty, and iterating through
- *  the keys.
- *  <p>
- *  This implementation uses a binary heap.
- *  The <em>insert</em> and <em>delete-the-minimum</em> operations take
- *  logarithmic amortized time.
- *  The <em>min</em>, <em>size</em>, and <em>is-empty</em> operations take constant time.
- *  Construction takes time proportional to the specified capacity or the number of
- *  items used to initialize the data structure.
- *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/24pq">Section 2.4</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
+ * time complexity O(N).
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  *
@@ -31,7 +16,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Initializes an empty priority queue with the given initial capacity.
-     *
+     * time complexity O(1)
      * @param  initCapacity the initial capacity of this priority queue
      */
     public MinPQ(int initCapacity) {
@@ -41,6 +26,7 @@ public class MinPQ<Key> implements Iterable<Key> {
 
     /**
      * Initializes an empty priority queue.
+     * time compexity O(1)
      */
     public MinPQ() {
         this(1);
@@ -49,7 +35,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue with the given initial capacity,
      * using the given comparator.
-     *
+     * Time complexity O(1)
      * @param  initCapacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
