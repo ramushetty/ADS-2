@@ -30,9 +30,9 @@ public class SeamCarver {
 			return 1000;
 		
 		}
-		else {
+		
 			return Math.sqrt(calsquare(pic.get(x - 1, y), pic.get(x + 1, y)) + calsquare(pic.get(x, y - 1), pic.get(x, y + 1)));
-		}
+	
 		// return 0;
 	}
 	public double calsquare(Color  one, Color  two) {
