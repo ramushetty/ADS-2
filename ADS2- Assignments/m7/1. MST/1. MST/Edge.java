@@ -14,8 +14,9 @@ public class Edge implements Comparable<Edge> {
      * @throws IllegalArgumentException if either {@code v} or {@code w} 
      *         is a negative integer
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
+     * time complexity O(V)
      */
-    public Edge(int v, int w, double weight) {
+    public Edge(final int v, final int w, final double weight) {
         if (v < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
         if (w < 0) throw new IllegalArgumentException("vertex index must be a nonnegative integer");
         if (Double.isNaN(weight)) throw new IllegalArgumentException("Weight is NaN");
@@ -26,7 +27,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns the weight of this edge.
-     *
+     * time complexity O(1)
      * @return the weight of this edge
      */
     public double weight() {
@@ -35,7 +36,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns either endpoint of this edge.
-     *
+     * time complexity O(1)
      * @return either endpoint of this edge
      */
     public int either() {
@@ -44,13 +45,13 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns the endpoint of this edge that is different from the given vertex.
-     *
+     * time complexity O(1)
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
      * @throws IllegalArgumentException if the vertex is not one of the
      *         endpoints of this edge
      */
-    public int other(int vertex) {
+    public int other(final int vertex) {
         if      (vertex == v)  {
             return w;
         }
@@ -69,28 +70,19 @@ public class Edge implements Comparable<Edge> {
      * @return a negative integer, zero, or positive integer depending on whether
      *         the weight of this is less than, equal to, or greater than the
      *         argument edge
+     *         Time complexity O(1)
      */
     @Override
-    public int compareTo(Edge that) {
+    public int compareTo(final Edge that) {
         return Double.compare(this.weight, that.weight);
     }
 
     /**
      * Returns a string representation of this edge.
-     *
+     * time complexity O(v)
      * @return a string representation of this edge
      */
     public String toString() {
         return String.format("%d-%d %.5f", v, w, weight);
-    }
-
-    /**
-     * Unit tests the {@code Edge} data type.
-     *
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        // Edge e = new Edge(12, 34, 5.67);
-        // StdOut.println(e);
     }
 }
