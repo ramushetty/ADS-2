@@ -26,11 +26,11 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		if (x == 0 || y == 0 || y == wid - 1 || x == wid - 1 ) {
+		if (x == 0 || y == 0 || y == hei - 1 || x == wid - 1 ) {
 			return 1000;
 		
 		}
-		System.out.println("ramu");
+		// System.out.println("ramu");
 			return Math.sqrt(calsquare(pic.get(x - 1, y), pic.get(x + 1, y)) + calsquare(pic.get(x, y - 1), pic.get(x, y + 1)));
 	
 		// return 0;
