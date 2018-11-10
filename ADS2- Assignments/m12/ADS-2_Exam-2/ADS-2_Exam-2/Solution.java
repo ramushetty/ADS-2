@@ -37,7 +37,7 @@ public class Solution {
 			 for (int t = 0; t < ewg.V(); t++) {
 	            if (d.hasPathTo(t)) {
 	            	if (t == Integer.parseInt(tokens[1])) {
-	                System.out.printf("%.1f  ", d.distTo(t));
+	                	System.out.printf("%.1f  ", d.distTo(t));
 	                for (Edge e : d.pathTo(t)) {
 	                	String str = "" +e;
 	                    System.out.print(str.substring(12) + "   ");
@@ -45,12 +45,18 @@ public class Solution {
 	                    t = ewg.V();
 	                    return;
 	                }
+	                
 	                StdOut.println();
 	               }
+	               else {
+	            		System.out.println("No Path Found.");
+	            		 t = ewg.V();
+	                    return;
+
+	                }
 	            }
 	            else {
 	            	// if (t == ewg.V()) {
-	            		System.out.println("No Path Found");
 	            	// }
 	                // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
 	            }
