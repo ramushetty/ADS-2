@@ -83,9 +83,7 @@ public final class Solution {
                 ewg, Integer.parseInt(token[1]));
                 System.out.println(di2.pathTo(Integer.parseInt(token[2])));
                 double second = di.distTo(Integer.parseInt(token[2]));
-                System.out.println(first + second);
-
-                
+                System.out.println(first + second);         
 
             } else {
 
