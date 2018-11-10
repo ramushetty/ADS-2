@@ -49,9 +49,9 @@ public class Solution {
 	               }
 	            }
 	            else {
-	            	if (t == ewg.V()) {
+	            	// if (t == ewg.V()) {
 	            		System.out.println("No Path Found");
-	            	}
+	            	// }
 	                // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
 	            }
         	}
