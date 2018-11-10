@@ -39,6 +39,8 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			KruskalMST kmst = new KruskalMST(ewg);
+        	System.out.format("%.5f", kmst.weight());
 			break;
 
 		default:
