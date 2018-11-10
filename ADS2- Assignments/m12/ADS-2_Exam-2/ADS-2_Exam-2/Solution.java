@@ -42,21 +42,17 @@ public class Solution {
 
 	            		} 
 	               	}
-	               
-	            		
-
-	                
+    
 	            }
-	            else {
-	               			System.out.println("No Path Found.");
+	            else {     
+	            	 if (t == Integer.parseInt(tokens[1])) {
+	            	 	System.out.println("No Path Found.");
 	            		 	t = ewg.V();
-
 	            		}
-	            // else {
-	            // 	// if (t == ewg.V()) {
-	            // 	// }
-	            //     // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
-	            // }
+	               			
+
+	            	}
+	            
         	}
 			break;
 
