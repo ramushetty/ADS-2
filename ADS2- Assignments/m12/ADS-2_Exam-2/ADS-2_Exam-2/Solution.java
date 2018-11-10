@@ -37,32 +37,26 @@ public class Solution {
 			 for (int t = 0; t < ewg.V(); t++) {
 	            if (d.hasPathTo(t)) {
 	            	if (t == Integer.parseInt(tokens[1])) {
-	                	System.out.printf("%.1f  ", d.distTo(t));
-	                for (Edge e : d.pathTo(t)) {
-	                	String str = "" +e;
-	                    System.out.print(str.substring(12) + "   ");
-	                    // System.out.print("ramu");
-	                    t = ewg.V();
-	                    return;
-	                }
-	                
-	                StdOut.println();
-	               }
-	               else {
-	               		if (t == Integer.parseInt(tokens[1])) {
-	               			System.out.println("No Path Found.");
-	            		 	t = ewg.V();
-	                    	return;
-	               		}
+	            		if (d.distTo(t) > 0) {
+	                		System.out.printf("%.1f  ", d.distTo(t));
+
+	            		} 
+	               	}
+	               
 	            		
 
-	                }
+	                
 	            }
 	            else {
-	            	// if (t == ewg.V()) {
-	            	// }
-	                // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
-	            }
+	               			System.out.println("No Path Found.");
+	            		 	t = ewg.V();
+
+	            		}
+	            // else {
+	            // 	// if (t == ewg.V()) {
+	            // 	// }
+	            //     // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
+	            // }
         	}
 			break;
 
