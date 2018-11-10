@@ -49,9 +49,12 @@ public class Solution {
 	                StdOut.println();
 	               }
 	               else {
-	            		System.out.println("No Path Found.");
-	            		 t = ewg.V();
-	                    return;
+	               		if (t == Integer.parseInt(tokens[1])) {
+	               			System.out.println("No Path Found.");
+	            		 	t = ewg.V();
+	                    	return;
+	               		}
+	            		
 
 	                }
 	            }
