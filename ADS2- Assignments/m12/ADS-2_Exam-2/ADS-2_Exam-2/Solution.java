@@ -26,8 +26,8 @@ public final class Solution {
         while (k > 0) {
             String[] tokens = scan.nextLine().split(" ");
             Edge e = new Edge(Integer.parseInt(
-                                  tokens[0]), Integer.parseInt(
-                                  tokens[1]), Double.parseDouble(tokens[2]));
+                    tokens[0]), Integer.parseInt(
+            tokens[1]), Double.parseDouble(tokens[2]));
             ewg.addEdge(e);
             k--;
         }
@@ -46,10 +46,12 @@ public final class Solution {
             // Other wise print "No Path Found."
             String[] tokens = scan.nextLine().split(" ");
 
-            DijkstraUndirectedSP d = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
+            DijkstraUndirectedSP d = new DijkstraUndirectedSP(
+                ewg, Integer.parseInt(tokens[0]));
             if (d.hasPathTo(Integer.parseInt(tokens[1]))) {
 
-                System.out.printf("%.1f  ", d.distTo(Integer.parseInt(tokens[1])));
+                System.out.printf("%.1f  ", d.distTo(
+                    Integer.parseInt(tokens[1])));
 
             } else {
 
@@ -67,10 +69,12 @@ public final class Solution {
             // KruskalMST kmst = new KruskalMST(ewg);
             //          System.out.format("%.5f", kmst.weight());
             String[] token = scan.nextLine().split(" ");
-            DijkstraUndirectedSP di = new DijkstraUndirectedSP(ewg, Integer.parseInt(token[0]));
+            DijkstraUndirectedSP di = new DijkstraUndirectedSP(
+                ewg, Integer.parseInt(token[0]));
             if (di.hasPathTo(Integer.parseInt(token[2]))) {
 
-                System.out.printf("%.1f  ", di.distTo(Integer.parseInt(token[2])));
+                System.out.printf("%.1f  ", di.distTo(
+                    Integer.parseInt(token[2])));
 
             } else {
 
