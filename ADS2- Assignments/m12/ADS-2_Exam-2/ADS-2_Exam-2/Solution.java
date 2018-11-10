@@ -31,6 +31,30 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] tokens = scan.nextLine().split(" ");
+
+			DijkstraUndirectedSP d = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
+			 for (int t = 0; t < ewg.V(); t++) {
+	            if (d.hasPathTo(t)) {
+	            	if (t == Integer.parseInt(tokens[1])) {
+	                System.out.printf("%.1f  ", d.distTo(t));
+	                for (Edge e : d.pathTo(t)) {
+	                	String str = "" +e;
+	                    System.out.print(str.substring(12) + "   ");
+	                    // System.out.print("ramu");
+	                    t = ewg.V();
+	                    return;
+	                }
+	                StdOut.println();
+	               }
+	            }
+	            else {
+	            	if (t == ewg.V()) {
+	            		System.out.println("No Path Found");
+	            	}
+	                // StdOut.printf("%d to %d         no path\n",  Integer.parseInt(tokens[0]), t);
+	            }
+        	}
 			break;
 
 		case "ViaPaths":
@@ -39,8 +63,8 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			KruskalMST kmst = new KruskalMST(ewg);
-        	System.out.format("%.5f", kmst.weight());
+			// KruskalMST kmst = new KruskalMST(ewg);
+   //      	System.out.format("%.5f", kmst.weight());
 			break;
 
 		default:
