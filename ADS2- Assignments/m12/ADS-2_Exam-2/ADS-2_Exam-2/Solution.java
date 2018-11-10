@@ -10,7 +10,7 @@ public class Solution {
 		int n = Integer.parseInt(scan.nextLine()); // no of cities.
 		int k = Integer.parseInt(scan.nextLine()); // no roads lines.
 		EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
-		while (k < 0) {
+		while (k > 0) {
 				String[] tokens = scan.nextLine().split(" ");
             	Edge e = new Edge(Integer.parseInt(
                     tokens[0]), Integer.parseInt(
@@ -23,6 +23,7 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 			System.out.println(ewg);
+			System.out.println("ramu");
 			break;
 
 		case "DirectedPaths":
