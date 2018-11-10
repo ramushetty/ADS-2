@@ -23,7 +23,7 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 			System.out.println(ewg);
-			System.out.println("ramu");
+			// System.out.println("ramu");
 			break;
 
 		case "DirectedPaths":
