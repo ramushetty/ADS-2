@@ -73,9 +73,19 @@ public final class Solution {
             DijkstraUndirectedSP di = new DijkstraUndirectedSP(
                 ewg, Integer.parseInt(token[0]));
             if (di.hasPathTo(Integer.parseInt(token[2]))) {
+                System.out.println(di.pathTo(Integer.parseInt(token[0])));
+                // System.out.printf("%.1f  ", di.distTo(
+                    // Integer.parseInt(token[1])));
+                // di.pathTo(Integer.parseInt(token[1]));
+                double first = di.distTo(Integer.parseInt(token[1]));
+                System.out.println(first);
+                DijkstraUndirectedSP di2 = new DijkstraUndirectedSP(
+                ewg, Integer.parseInt(token[1]));
+                System.out.println(di2.pathTo(Integer.parseInt(token[2])));
+                double second = di.distTo(Integer.parseInt(token[2]));
+                System.out.println(first + second);
 
-                System.out.printf("%.1f  ", di.distTo(
-                    Integer.parseInt(token[2])));
+                
 
             } else {
 
