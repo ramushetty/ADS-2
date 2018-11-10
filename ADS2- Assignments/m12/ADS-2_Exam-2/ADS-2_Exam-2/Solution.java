@@ -34,26 +34,16 @@ public class Solution {
 			String[] tokens = scan.nextLine().split(" ");
 
 			DijkstraUndirectedSP d = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
-			 for (int t = 0; t < ewg.V(); t++) {
-	            if (d.hasPathTo(t)) {
-	            	if (t == Integer.parseInt(tokens[1])) {
-	            		if (d.distTo(t) > 0) {
-	                		System.out.printf("%.1f  ", d.distTo(t));
-
-	            		} 
-	               	}
+			 if (d.hasPathTo(Integer.parseInt(tokens[1]))) {
+	            	
+	                		System.out.printf("%.1f  ", d.distTo(Integer.parseInt(tokens[1])));
     
 	            }
 	            else {     
-	            	 if (t == Integer.parseInt(tokens[1])) {
+
 	            	 	System.out.println("No Path Found.");
-	            		 	t = ewg.V();
-	            		}
-	               			
 
 	            	}
-	            
-        	}
 			break;
 
 		case "ViaPaths":
@@ -66,23 +56,17 @@ public class Solution {
    //      	System.out.format("%.5f", kmst.weight());
 			String[] token = scan.nextLine().split(" ");
 			DijkstraUndirectedSP di = new DijkstraUndirectedSP(ewg, Integer.parseInt(token[0]));
-			// for (int t = 0; t < ewg.V(); t++) {
 	            if (di.hasPathTo(Integer.parseInt(token[2]))) {
 	            	
 	                		System.out.printf("%.1f  ", di.distTo(Integer.parseInt(token[2])));
     
 	            }
 	            else {     
-	            	 // if (t == Integer.parseInt(token[2])) {
+
 	            	 	System.out.println("No Path Found.");
-	            		 	// t = ewg.V();
-	            		// }
-	               			
 
 	            	}
-	            
-        	// }
-			
+
 			break;
 
 		default:
