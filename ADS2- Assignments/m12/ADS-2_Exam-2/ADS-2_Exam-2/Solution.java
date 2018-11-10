@@ -11,11 +11,11 @@ public class Solution {
 		int k = Integer.parseInt(scan.nextLine()); // no roads lines.
 		EdgeWeightedGraph ewg = new EdgeWeightedGraph(n);
 		while (k > 0) {
-				String[] tokens = scan.nextLine().split(" ");
-            	Edge e = new Edge(Integer.parseInt(
-                    tokens[0]), Integer.parseInt(
-                    tokens[1]), Double.parseDouble(tokens[2]));
-            		ewg.addEdge(e);
+			String[] tokens = scan.nextLine().split(" ");
+			Edge e = new Edge(Integer.parseInt(
+			                      tokens[0]), Integer.parseInt(
+			                      tokens[1]), Double.parseDouble(tokens[2]));
+			ewg.addEdge(e);
 			k--;
 		}
 		String caseToGo = scan.nextLine();
@@ -34,16 +34,15 @@ public class Solution {
 			String[] tokens = scan.nextLine().split(" ");
 
 			DijkstraUndirectedSP d = new DijkstraUndirectedSP(ewg, Integer.parseInt(tokens[0]));
-			 if (d.hasPathTo(Integer.parseInt(tokens[1]))) {
-	            	
-	                		System.out.printf("%.1f  ", d.distTo(Integer.parseInt(tokens[1])));
-    
-	            }
-	            else {     
+			if (d.hasPathTo(Integer.parseInt(tokens[1]))) {
 
-	            	 	System.out.println("No Path Found.");
+				System.out.printf("%.1f  ", d.distTo(Integer.parseInt(tokens[1])));
 
-	            	}
+			} else {
+
+				System.out.println("No Path Found.");
+
+			}
 			break;
 
 		case "ViaPaths":
@@ -53,19 +52,18 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			// KruskalMST kmst = new KruskalMST(ewg);
-   //      	System.out.format("%.5f", kmst.weight());
+			//      	System.out.format("%.5f", kmst.weight());
 			String[] token = scan.nextLine().split(" ");
 			DijkstraUndirectedSP di = new DijkstraUndirectedSP(ewg, Integer.parseInt(token[0]));
-	            if (di.hasPathTo(Integer.parseInt(token[2]))) {
-	            	
-	                		System.out.printf("%.1f  ", di.distTo(Integer.parseInt(token[2])));
-    
-	            }
-	            else {     
+			if (di.hasPathTo(Integer.parseInt(token[2]))) {
 
-	            	 	System.out.println("No Path Found.");
+				System.out.printf("%.1f  ", di.distTo(Integer.parseInt(token[2])));
 
-	            	}
+			} else {
+
+				System.out.println("No Path Found.");
+
+			}
 
 			break;
 
