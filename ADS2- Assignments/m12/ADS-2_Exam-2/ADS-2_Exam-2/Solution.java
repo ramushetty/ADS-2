@@ -64,6 +64,25 @@ public class Solution {
 			// Other wise print "No Path Found."
 			// KruskalMST kmst = new KruskalMST(ewg);
    //      	System.out.format("%.5f", kmst.weight());
+			String[] token = scan.nextLine().split(" ");
+			DijkstraUndirectedSP di = new DijkstraUndirectedSP(ewg, Integer.parseInt(token[0]));
+			// for (int t = 0; t < ewg.V(); t++) {
+	            if (di.hasPathTo(Integer.parseInt(token[2]))) {
+	            	
+	                		System.out.printf("%.1f  ", di.distTo(Integer.parseInt(token[2])));
+    
+	            }
+	            else {     
+	            	 // if (t == Integer.parseInt(token[2])) {
+	            	 	System.out.println("No Path Found.");
+	            		 	// t = ewg.V();
+	            		// }
+	               			
+
+	            	}
+	            
+        	// }
+			
 			break;
 
 		default:
