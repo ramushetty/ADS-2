@@ -15,10 +15,10 @@ public final class Solution {
         // quick.sort(arr);
         m.sort(arr);
         System.out.print("[");
-        for (int i = 0; i < total - 1; i++) {
+        for (int i = 0; i < total - 2; i++) {
             System.out.print(arr[i] + ", ");
         }
-        System.out.print(arr[total] + "]");
+        System.out.print(arr[total - 1] + "]");
 
     }
 }
