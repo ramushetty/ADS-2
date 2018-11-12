@@ -1,18 +1,19 @@
 /**
  *  The {@code Quick3string} class provides static methods for sorting an
  *  array of strings using 3-way radix quicksort.
- *  <p>
- *  For additional documentation,
- *  see <a href="https://algs4.cs.princeton.edu/51radix">Section 5.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
+ * 
  */
 public class Quick3string {
+    /**
+     * {cutoff }.
+     */
     private static final int CUTOFF =  15;   // cutoff to insertion sort
 
     // do not instantiate
+    
+    /**
+     * Constructs the object.
+     */
     public Quick3string() { } 
 
     /**  
@@ -20,14 +21,23 @@ public class Quick3string {
      *
      * @param a the array to be sorted
      */
-    public static void sort(String[] a) {
+    public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
         sort(a, 0, a.length-1, 0);
         assert isSorted(a);
     }
 
     // return the dth character of s, -1 if d = length of s
-    private static int charAt(String s, int d) { 
+    
+    /**
+     * { charat}.
+     *
+     * @param      s     { string type }
+     * @param      d     { integer }
+     *
+     * @return     { returns integer }
+     */
+    private static int charAt(final String s, final int d) { 
         assert d >= 0 && d <= s.length();
         if (d == s.length()) return -1;
         return s.charAt(d);
@@ -35,7 +45,16 @@ public class Quick3string {
 
 
     // 3-way string quicksort a[lo..hi] starting at dth character
-    private static void sort(String[] a, int lo, int hi, int d) { 
+
+    /**
+     * sort function
+     *
+     * @param      a     { String array }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { integer d }
+     */
+    private static void sort(final String[] a, final int lo, final int hi, final int d) { 
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -60,14 +79,31 @@ public class Quick3string {
     }
 
     // sort from a[lo] to a[hi], starting at the dth character
-    private static void insertion(String[] a, int lo, int hi, int d) {
+
+    /**
+     * { insertion sort}.
+     *
+     * @param      a     { string array }
+     * @param      lo    The lower
+     * @param      hi    The higher
+     * @param      d     { intger d }
+     */
+    private static void insertion(final String[] a, final int lo, final int hi, final int d) {
         for (int i = lo; i <= hi; i++)
             for (int j = i; j > lo && less(a[j], a[j-1], d); j--)
                 exch(a, j, j-1);
     }
 
     // exchange a[i] and a[j]
-    private static void exch(String[] a, int i, int j) {
+
+    /**
+     * exchanges elements in array.
+     *
+     * @param      a     { string array }
+     * @param      i     { first element}
+     * @param      j     { second element  }
+     */
+    private static void exch(final String[] a, final int i, final int j) {
         String temp = a[i];
         a[i] = a[j];
         a[j] = temp;
@@ -81,16 +117,38 @@ public class Quick3string {
     // }
 
     // is v less than w, starting at character d
+
+    /**
+     * {less function }.
+     *
+     * @param      v     { string v }
+     * @param      w     { string w }
+     * @param      d     { integer d }
+     *
+     * @return     {returns true or false }
+     */
     private static boolean less(String v, String w, int d) {
         assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
-            if (v.charAt(i) < w.charAt(i)) return true;
-            if (v.charAt(i) > w.charAt(i)) return false;
+            if (v.charAt(i) < w.charAt(i)) {
+                return true;
+            }
+            if (v.charAt(i) > w.charAt(i)) {
+                return false;
+            }
         }
         return v.length() < w.length();
     }
 
     // is the array sorted
+    
+    /**
+     * Determines if sorted.
+     *
+     * @param      a     {string array }
+     *
+     * @return     True if sorted, False otherwise.
+     */
     private static boolean isSorted(String[] a) {
         for (int i = 1; i < a.length; i++)
             if (a[i].compareTo(a[i-1]) < 0) return false;
@@ -105,7 +163,7 @@ public class Quick3string {
      *
      * @param args the command-line arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // read in the strings from standard input
         // String[] a = StdIn.readAllStrings();
