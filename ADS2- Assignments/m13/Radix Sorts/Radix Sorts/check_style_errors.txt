@@ -1,22 +1,11 @@
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:42: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:49: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:57: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:70: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:71: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:72: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:77: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:91: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:92: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:93: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:130:33: Parameter v should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:130:43: Parameter w should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:130:53: Parameter d should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:152:37: Parameter a should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:153: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:154: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:75:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:78:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:145: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:166:37: Parameter a should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:167: 'for' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 17 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
