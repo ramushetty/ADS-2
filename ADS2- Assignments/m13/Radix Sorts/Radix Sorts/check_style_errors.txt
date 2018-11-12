@@ -113,7 +113,7 @@ Audit done.
 Checkstyle ends with 110 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:12: Class Quick3string should be declared as final. [FinalClass]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:12:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:13:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:16: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:16:5: Missing a Javadoc comment. [JavadocMethod]
@@ -176,10 +176,8 @@ Audit done.
 Checkstyle ends with 60 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:11:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:11:35: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:12: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:22:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Solution.java:22:35: ';' is preceded with whitespace. [NoWhitespaceBefore]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 4 errors.

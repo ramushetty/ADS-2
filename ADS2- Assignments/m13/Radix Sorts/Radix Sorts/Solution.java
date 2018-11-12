@@ -1,8 +1,19 @@
 import java.util.Scanner;
+/**
+ * { class Solution}.
+ */
 public final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
-        //empty.
+        //empty constructor.
     }
+    /**
+     * { main function }
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         MSD m = new MSD();
@@ -15,7 +26,7 @@ public final class Solution {
         // quick.sort(arr);
         m.sort(arr);
         System.out.print("[");
-        for (int i = 0; i < total - 2; i++) {
+        for (int i = 0; i < total - 1; i++) {
             System.out.print(arr[i] + ", ");
         }
         System.out.print(arr[total - 1] + "]");

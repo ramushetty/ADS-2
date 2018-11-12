@@ -13,7 +13,7 @@ public class Quick3string {
     private static final int CUTOFF =  15;   // cutoff to insertion sort
 
     // do not instantiate
-    private Quick3string() { } 
+    public Quick3string() { } 
 
     /**  
      * Rearranges the array of strings in ascending order.
@@ -21,7 +21,7 @@ public class Quick3string {
      * @param a the array to be sorted
      */
     public static void sort(String[] a) {
-        StdRandom.shuffle(a);
+        // StdRandom.shuffle(a);
         sort(a, 0, a.length-1, 0);
         assert isSorted(a);
     }
