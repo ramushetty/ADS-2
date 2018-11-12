@@ -1,7 +1,7 @@
 /**
  *  The {@code Quick3string} class provides static methods for sorting an
  *  array of strings using 3-way radix quicksort.
- * 
+ *
  */
 public class Quick3string {
     /**
@@ -10,25 +10,25 @@ public class Quick3string {
     private static final int CUTOFF =  15;   // cutoff to insertion sort
 
     // do not instantiate
-    
+
     /**
      * Constructs the object.
      */
-    public Quick3string() { } 
+    public Quick3string() { }
 
-    /**  
+    /**
      * Rearranges the array of strings in ascending order.
      *
      * @param a the array to be sorted
      */
     public static void sort(final String[] a) {
         // StdRandom.shuffle(a);
-        sort(a, 0, a.length-1, 0);
+        sort(a, 0, a.length - 1, 0);
         assert isSorted(a);
     }
 
     // return the dth character of s, -1 if d = length of s
-    
+
     /**
      * { charat}.
      *
@@ -37,7 +37,7 @@ public class Quick3string {
      *
      * @return     { returns integer }
      */
-    private static int charAt(final String s, final int d) { 
+    private static int charAt(final String s, final int d) {
         assert d >= 0 && d <= s.length();
         if (d == s.length()) return -1;
         return s.charAt(d);
@@ -54,7 +54,7 @@ public class Quick3string {
      * @param      hi    The higher
      * @param      d     { integer d }
      */
-    private static void sort(final String[] a, final int lo, final int hi, final int d) { 
+    private static void sort(final String[] a, final int lo, final int hi, final int d) {
 
         // cutoff to insertion sort for small subarrays
         if (hi <= lo + CUTOFF) {
@@ -72,10 +72,10 @@ public class Quick3string {
             else              i++;
         }
 
-        // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi]. 
-        sort(a, lo, lt-1, d);
-        if (v >= 0) sort(a, lt, gt, d+1);
-        sort(a, gt+1, hi, d);
+        // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi].
+        sort(a, lo, lt - 1, d);
+        if (v >= 0) sort(a, lt, gt, d + 1);
+        sort(a, gt + 1, hi, d);
     }
 
     // sort from a[lo] to a[hi], starting at the dth character
@@ -90,8 +90,8 @@ public class Quick3string {
      */
     private static void insertion(final String[] a, final int lo, final int hi, final int d) {
         for (int i = lo; i <= hi; i++)
-            for (int j = i; j > lo && less(a[j], a[j-1], d); j--)
-                exch(a, j, j-1);
+            for (int j = i; j > lo && less(a[j], a[j - 1], d); j--)
+                exch(a, j, j - 1);
     }
 
     // exchange a[i] and a[j]
@@ -113,7 +113,7 @@ public class Quick3string {
     // DEPRECATED BECAUSE OF SLOW SUBSTRING EXTRACTION IN JAVA 7
     // private static boolean less(String v, String w, int d) {
     //    assert v.substring(0, d).equals(w.substring(0, d));
-    //    return v.substring(d).compareTo(w.substring(d)) < 0; 
+    //    return v.substring(d).compareTo(w.substring(d)) < 0;
     // }
 
     // is v less than w, starting at character d
@@ -141,7 +141,7 @@ public class Quick3string {
     }
 
     // is the array sorted
-    
+
     /**
      * Determines if sorted.
      *
@@ -151,7 +151,7 @@ public class Quick3string {
      */
     private static boolean isSorted(String[] a) {
         for (int i = 1; i < a.length; i++)
-            if (a[i].compareTo(a[i-1]) < 0) return false;
+            if (a[i].compareTo(a[i - 1]) < 0) return false;
         return true;
     }
 

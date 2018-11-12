@@ -10,7 +10,7 @@ public final class Solution {
         //empty constructor.
     }
     /**
-     * { main function }
+     * { main function }.
      *
      * @param      args  The arguments
      */
@@ -19,7 +19,7 @@ public final class Solution {
         // MSD m = new MSD();
         int total = Integer.parseInt(scan.nextLine());
         String[] arr = new String[total];
-        for (int i = 0 ; i < total ; i++) {
+        for (int i = 0; i < total; i++) {
             arr[i] = scan.nextLine();
         }
         Quick3string quick = new Quick3string();
