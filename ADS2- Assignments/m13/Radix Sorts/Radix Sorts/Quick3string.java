@@ -3,7 +3,7 @@
  *  array of strings using 3-way radix quicksort.
  *
  */
-public class Quick3string {
+class Quick3string {
     /**
      * {cutoff }.
      */
@@ -72,11 +72,9 @@ public class Quick3string {
             int t = charAt(a[i], d);
             if      (t < v) {
                 exch(a, lt++, i++);
-            }
-            else if (t > v) {
+            } else if (t > v) {
                 exch(a, i, gt--);
-            }
-            else {
+            } else {
                 i++;
             }
         }
@@ -142,7 +140,7 @@ final String[] a, final int lo, final int hi, final int d) {
      * @return     {returns true or false }
      */
     private static boolean less(final String v, final String w, final int d) {
-        assert v.substring(0, d).equals(w.substring(0, d)); 
+        assert v.substring(0, d).equals(w.substring(0, d));
         for (int i = d; i < Math.min(v.length(), w.length()); i++) {
             if (v.charAt(i) < w.charAt(i)) {
                 return true;
@@ -163,11 +161,12 @@ final String[] a, final int lo, final int hi, final int d) {
      *
      * @return     True if sorted, False otherwise.
      */
-    private static boolean isSorted(String[] a) {
-        for (int i = 1; i < a.length; i++)
+    private static boolean isSorted(final String[] a) {
+        for (int i = 1; i < a.length; i++) {
             if (a[i].compareTo(a[i - 1]) < 0) {
                 return false;
             }
+        }
         return true;
     }
 

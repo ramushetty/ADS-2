@@ -1,11 +1,7 @@
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:75:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:78:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:145: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:166:37: Parameter a should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:167: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:17:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
