@@ -14,9 +14,11 @@ public final class Solution {
         // Quick3string quick = new Quick3string();
         // quick.sort(arr);
         m.sort(arr);
-        for (int i = 0; i < total; i++) {
-            System.out.println(arr[i]);
+        System.out.print("[");
+        for (int i = 0; i < total - 1; i++) {
+            System.out.print(arr[i] + ", ");
         }
+        System.out.print(arr[total] + "]");
 
     }
 }
