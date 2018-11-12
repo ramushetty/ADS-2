@@ -1,7 +1,6 @@
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m13\Radix Sorts\Radix Sorts\Quick3string.java:17:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

@@ -3,7 +3,7 @@
  *  array of strings using 3-way radix quicksort.
  *
  */
-class Quick3string {
+public class Quick3string {
     /**
      * {cutoff }.
      */
