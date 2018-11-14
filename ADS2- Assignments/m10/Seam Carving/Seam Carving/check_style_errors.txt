@@ -226,21 +226,9 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:6: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:15: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:15:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:17:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:17:44: Parameter sc should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:25:42: Parameter sc should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:32:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:32:29: Parameter args should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:34: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowSeams.java:37: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
 Starting audit...
