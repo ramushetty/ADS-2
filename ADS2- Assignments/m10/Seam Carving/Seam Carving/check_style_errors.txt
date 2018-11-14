@@ -5,20 +5,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:5: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:17: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:17:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:18:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:18:29: Parameter args should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:19:28: '3' is a magic number. [MagicNumber]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:20: Line is longer than 80 characters (found 113). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:26: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:28: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:44: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ResizeDemo.java:50: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 12 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SCUtility.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SCUtility.java:15: Missing a Javadoc comment. [JavadocType]
