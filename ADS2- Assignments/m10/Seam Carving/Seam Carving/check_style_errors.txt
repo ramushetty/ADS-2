@@ -222,9 +222,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m10\Seam Carving\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
