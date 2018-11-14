@@ -3,7 +3,7 @@
  *  Execution:    java ShowSeams input.png
  *  Dependencies: SeamCarver.java SCUtility.java
  *
- *  Read image from file specified as command line argument. Show 3 images 
+ *  Read image from file specified as command line argument. Show 3 images
  *  original image as well as horizontal and vertical seams of that image.
  *  Each image hides the previous one - drag them to see all three.
  *
