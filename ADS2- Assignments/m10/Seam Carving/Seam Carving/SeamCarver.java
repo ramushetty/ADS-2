@@ -10,7 +10,7 @@ public class SeamCarver {
     /**
      * {Picture Object}.
      */
-    private Picture pic;
+    private Picture pict;
 
     /**
      * Constructs the object.
@@ -21,72 +21,72 @@ public class SeamCarver {
         if (picture == null) {
             throw new java.lang.IllegalArgumentException("picture is null");
         }
-        this.pic = picture;
+        this.pict = picture;
     }
 
 
     /**
      * {current picture}.
-     * Time complexity is O(1)
+     * Time complexity  O(1)
      * @return     {Picture}
      */
     public Picture picture() {
-        return this.pic;
+        return this.pict;
     }
 
     /**
-     * {width of current picture}.
-     * Time complexity is O(1)
+     * {width}.
+     * Time complexity O(1)
      * @return     {Integer}
      */
     public int width() {
-        return this.pic.width();
+        return this.pict.width();
     }
 
     /**
-     * {height of current picture}.
+     * {height}.
      * Time complexity is O(1)
      * @return     {Integer}
      */
     public int height() {
-        return this.pic.height();
+        return this.pict.height();
     }
 
 
     /**
-     * {energy of pixel at column x and row y}.
+     * {energy of pixel}.
      * Time complexity is O(1)
-     * @param      x     {Column}
-     * @param      y     {Row}
+     * @param      d     {Column}
+     * @param      p     {Row}
      *
      * @return     {Double}
      */
-    public  double energy(final int x, final int y) {
-        int w = width() - 1, h = height() - 1;
-        if (x < 0 || x > w || y < 0 || y > h) {
+    public  double energy(final int d, final int p) {
+        int wi = width() - 1, hei = height() - 1;
+        if (d < 0 || d > wi || p < 0 || p > hei) {
             throw new java.lang.IllegalArgumentException(
                 "IllegalArgumentException");
         }
-        if (x == 0 || x == w ||  y == 0 || y == h) {
+        if (d == 0 || d == wi ||  p == 0 || p == hei) {
             return BORDER_VALUE;
         }
-        return internalEnergy(x, y);
+        return internalEnergy(d, p);
     }
 
 
     /**
-     * {energy of pixel at column x and row y not on border}.
+     * {energy of pixel at column d and row p not on border}.
      * Time complexity is O(1)
-     * @param      x     {Column}
-     * @param      y     {Row}
+     * @param      d     {Column}
+     * @param      p     {Row}
      *
      * @return     {Double}
      */
-    private double internalEnergy(final int x, final int y) {
-        Color left = this.pic.get(x - 1, y);
-        Color right = this.pic.get(x + 1, y);
-        Color up = this.pic.get(x, y - 1);
-        Color down = this.pic.get(x, y + 1);
+    private double internalEnergy(final int d, final int p) {
+        Color left = this.pict.get(d - 1, p);
+        Color right = this.pict.get(d + 1, p);
+        Color up = this.pict.get(d, p - 1);
+        Color down = this.pict.get(d, p + 1);
         return Math.sqrt(gradient(left, right) + gradient(up, down));
     }
 
@@ -111,27 +111,26 @@ public class SeamCarver {
      * @return     The energy matrix.
      */
     private double[][] getEnergyMatrix() {
-        double[][] energies = new double[height()][width()];
+        double[][] energi = new double[height()][width()];
         for (int i = 0; i < height(); i++) {
             for (int j = 0; j < width(); j++) {
-                energies[i][j] = energy(j, i);
+                energi[i][j] = energy(j, i);
             }
         }
-        return energies;
+        return energi;
     }
 
 
     /**
-     * {pass through an array and mark the.
-     * shorthest distance from top to entry}
-     * Time complexity is height * width
+     * {}.
+     * Time complexity height * width
      * @param      array  The array
      */
     private void topologicalSort(final double[][] array) {
-        int h = array.length;
-        int w = array[0].length;
-        for (int row = 1; row < h; row++) {
-            for (int col = 0; col < w; col++) {
+        int hei = array.length;
+        int wi = array[0].length;
+        for (int row = 1; row < hei; row++) {
+            for (int col = 0; col < wi; col++) {
                 double temp = array[row - 1][col];
                 double min = 0;
                 if (col == 0) {
@@ -140,7 +139,7 @@ public class SeamCarver {
                     min = Math.min(temp, array[row - 1][col - 1]);
                 }
 
-                if (col != (w - 1)) {
+                if (col != (wi - 1)) {
                     min = Math.min(min, array[row - 1][col + 1]);
                 } else {
                     min = min;
@@ -158,11 +157,11 @@ public class SeamCarver {
      * @return     {2-D Double Array}
      */
     private double[][] transposeGrid(final double[][] array) {
-        int h = array.length;
-        int w = array[0].length;
-        double[][] tempArray = new double[w][h];
-        for (int row = 0; row < h; row++) {
-            for (int col = 0; col < w; col++) {
+        int hei = array.length;
+        int wi = array[0].length;
+        double[][] tempArray = new double[wi][hei];
+        for (int row = 0; row < hei; row++) {
+            for (int col = 0; col < wi; col++) {
                 tempArray[col][row] = array[row][col];
             }
         }
@@ -177,24 +176,24 @@ public class SeamCarver {
      * @return     {1-D Integer array}
      */
     private int[] minVerticalPath(final double[][] array) {
-        int h = array.length, w = array[0].length;
-        int[] path = new int[h];
+        int hei = array.length, wi = array[0].length;
+        int[] path = new int[hei];
 
         topologicalSort(array);
 
-        path[h - 1] = 0;
-        for (int i = 0; i < w; i++) {
-            if (array[h - 1][i] < array[h - 1][path[h - 1]]) {
-                path[h - 1] = i;
+        path[hei - 1] = 0;
+        for (int i = 0; i < wi; i++) {
+            if (array[hei - 1][i] < array[hei - 1][path[hei - 1]]) {
+                path[hei - 1] = i;
             }
         }
-        for (int row = h - 2; row >= 0; row--) {
+        for (int row = hei - 2; row >= 0; row--) {
             int col = path[row + 1];
             path[row] = col;
             if (col > 0 && array[row][col - 1] < array[row][path[row]]) {
                 path[row] = col - 1;
             }
-            if (col < (w - 2) && array[row][col + 1] < array[row][path[row]]) {
+            if (col < (wi - 2) && array[row][col + 1] < array[row][path[row]]) {
                 path[row] = col + 1;
             }
         }
@@ -232,16 +231,16 @@ public class SeamCarver {
                 "IllegalArgumentException");
         }
         Picture picture1 = new Picture(width(), height() - 1);
-        for (int w = 0; w < width(); w++) {
-            for (int h = 0; h < seam[w]; h++) {
-                picture1.set(w, h, this.pic.get(w, h));
+        for (int wi = 0; wi < width(); wi++) {
+            for (int hei = 0; hei < seam[wi]; hei++) {
+                picture1.set(wi, hei, this.pict.get(wi, hei));
             }
 
-            for (int h = seam[w] + 1; h < height(); h++) {
-                picture1.set(w, h - 1, this.pic.get(w, h));
+            for (int hei = seam[wi] + 1; hei < height(); hei++) {
+                picture1.set(wi, hei - 1, this.pict.get(wi, hei));
             }
         }
-        this.pic = picture1;
+        this.pict = picture1;
     }
 
 
@@ -256,15 +255,15 @@ public class SeamCarver {
                 "IllegalArgumentException");
         }
         Picture picture2 = new Picture(width() - 1, height());
-        for (int h = 0; h < height(); h++) {
-            for (int w = 0; w < seam[h]; w++) {
-                picture2.set(w, h, this.pic.get(w, h));
+        for (int hei = 0; hei < height(); hei++) {
+            for (int wi = 0; wi < seam[hei]; wi++) {
+                picture2.set(wi, hei, this.pict.get(wi, hei));
             }
-            for (int w = seam[h] + 1; w < width(); w++) {
-                picture2.set(w - 1, h, this.pic.get(w, h));
+            for (int wi = seam[hei] + 1; wi < width(); wi++) {
+                picture2.set(wi - 1, hei, this.pict.get(wi, hei));
             }
         }
-        this.pic = picture2;
+        this.pict = picture2;
     }
 
     /**
