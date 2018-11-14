@@ -24,7 +24,7 @@ public final class ShowEnergy {
     }
     /**
      * { function_description }.
-     *
+     * time complexity mn
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
