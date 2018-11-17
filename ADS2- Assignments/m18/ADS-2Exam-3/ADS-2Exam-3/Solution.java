@@ -12,10 +12,14 @@ public class Solution {
 		case "loadDictionary":
 			// input000.txt and output000.txt
 			BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+			// String d ="wont";
+			// System.out.println(hash);
+			// String[] tokens = toReadFile("Files" + d);
+			// System.out.println(tokens[0]);
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				// String[] tokens
-				System.out.println(key);
+				// System.out.println(key);
 				System.out.println(hash.get(key));
 			}
 			break;
@@ -90,6 +94,14 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
+		String[] tokens = toReadFile(file);
+		// System.out.println(tokens[0]);
+		for (int i = 0; i < tokens.length; i++) 
+		{
+			// System.out.print(tokens[i] + "  ");
+			st.put(tokens[i] , i);
+		}
+
 		return st;
 	}
 
