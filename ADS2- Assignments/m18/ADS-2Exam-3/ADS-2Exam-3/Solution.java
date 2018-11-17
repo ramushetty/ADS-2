@@ -31,7 +31,7 @@ public class Solution {
 				String prefix = scan.nextLine();
 				// t9.getAllWords(prefix);
 				for (String each : t9.getAllWords(prefix)) {
-					// System.out.println(each);
+					System.out.println(each);
 				}
 			}
 			break;
