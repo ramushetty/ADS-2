@@ -57,8 +57,49 @@ messagesome
 going
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:32)
+wont
+working
+what
+whatever
+whats
+whatsup
+vegetables
+too
+tood
+took
+tookplace
+tool
+toolets
+toon
+tooo
+toopray
+toot
+toothpaste
+tootsie
+over
+overa
+overagd
+overakhesh
+overb
+overboy
+overdid
+overdose
+overemphasiseor
+overheating
+overment
+overs
+overtime
+overy
+message
+messaged
+messageit
+messageits
+messageno
+messagepandy
+messages
+messagesmissed
+messagesome
+going
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -127,7 +168,7 @@ seeking
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:44)
+	at Solution.main(Solution.java:45)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -139,7 +180,7 @@ words
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:63)
+	at Solution.main(Solution.java:64)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -192,6 +233,6 @@ keep
 
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:76)
+	at Solution.main(Solution.java:77)
 ----------------------------------------
 
