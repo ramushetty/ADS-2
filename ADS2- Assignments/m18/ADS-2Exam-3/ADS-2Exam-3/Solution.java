@@ -199,7 +199,7 @@ class T9 {
 	        for (Map.Entry<String, Integer> entry : sorted.entrySet())  {
 	        	int j = 0;
 	        	if (j<k) {
-	        		System.out.println("j");
+	        		System.out.println(j);
 	            	System.out.println(entry.getKey()) ;   
 	            	j++;
 	        		}

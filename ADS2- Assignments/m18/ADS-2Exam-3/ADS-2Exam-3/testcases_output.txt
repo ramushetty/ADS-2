@@ -169,17 +169,17 @@ right
 words
 
 Your Output: 
-j
+0
 hello
-j
+0
 is
-j
+0
 right
-j
+0
 rights
-j
+0
 within
-j
+0
 words
 ----------------------------------------
 
