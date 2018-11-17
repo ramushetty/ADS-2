@@ -376,6 +376,7 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:2: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:4: Missing a Javadoc comment. [JavadocType]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -418,12 +419,30 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:172:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:172:48: Parameter words should be final. [FinalParameters]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:172:72: Parameter k should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:179:28: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189:56: Parameter k should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:177: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:178: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:181:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:185:35: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:188: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:189: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:190: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:191: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:192: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:193: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:194: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:195: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:196: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:197: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:198: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:202: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:202:59: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:205: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:206: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:213:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:213:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\Solution.java:213:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 47 errors.
+Checkstyle ends with 66 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m18\ADS-2Exam-3\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

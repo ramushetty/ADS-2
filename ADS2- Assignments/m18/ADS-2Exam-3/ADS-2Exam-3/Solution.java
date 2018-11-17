@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.*;
 
 public class Solution {
 
@@ -174,13 +174,37 @@ class T9 {
 		bag = new Bag<>();
 		// System.out.println("input");
 		// System.out.println(words);
+		Map<String, Integer> map = new HashMap<>(); 
+		
 		for (String s : words) {
 			int i = 0;
 			for(String p : tst.keysWithPrefix(s)) {
 				i++;
 			}
-			System.out.println(i);
+			// System.out.println(i);
+			map.put(s,i);
+
 		}
+  
+	    // Function to sort map by Key 
+	    // public static void sortbykey() 
+	    // { 
+	        // TreeMap to store values of HashMap 
+	        TreeMap<String, Integer> sorted = new TreeMap<>(); 
+	  
+	        // Copy all data from hashMap into TreeMap 
+	        sorted.putAll(map); 
+	  
+	        // Display the TreeMap which is naturally sorted 
+	        for (Map.Entry<String, Integer> entry : sorted.entrySet())  {
+	        	int j = 0;
+	        	if (j < k) {
+	            	System.out.println(entry.getKey()) ;   
+	            	j++;
+	        		}
+	            }      
+	    // } 
+
 		return null;
 	}
 
