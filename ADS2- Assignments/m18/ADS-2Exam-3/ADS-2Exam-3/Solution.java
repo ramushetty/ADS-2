@@ -173,9 +173,13 @@ class T9 {
 		// your code goes here
 		bag = new Bag<>();
 		// System.out.println("input");
-		System.out.println(words);
+		// System.out.println(words);
 		for (String s : words) {
-			System.out.println(st.get(s));
+			int i = 0;
+			for(String p : tst.keysWithPrefix(s)) {
+				i++;
+			}
+			System.out.println(i);
 		}
 		return null;
 	}

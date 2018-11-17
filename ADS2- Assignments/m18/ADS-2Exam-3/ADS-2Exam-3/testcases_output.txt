@@ -169,13 +169,12 @@ right
 words
 
 Your Output: 
-Bag@43a25848
-704
-6
-22
+13
+1
 2
-87
-42
+1
+4
+6
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -227,10 +226,9 @@ paper
 keep
 
 Your Output: 
-null
 Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:177)
-	at T9.t9(Solution.java:186)
+	at T9.t9(Solution.java:190)
 	at Solution.main(Solution.java:81)
 ----------------------------------------
 
