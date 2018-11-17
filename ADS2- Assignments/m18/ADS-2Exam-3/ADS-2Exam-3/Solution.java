@@ -54,16 +54,20 @@ public class Solution {
 
 		case "topK":
 			// input003.txt and output003.txt
+		System.out.println("first");
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
 			Bag<String> bag = new Bag<String>();
 			int k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
+				System.out.println("second");
 				String line = scan.nextLine();
 				bag.add(line);
 			}
-			for (String each : t9.getSuggestions(bag, k)) {
-				System.out.println(each);
-			}
+			System.out.println("third");
+			t9.getSuggestions(bag, k);
+			// for (String each : t9.getSuggestions(bag, k)) {
+			// 	System.out.println(each);
+			// }
 
 			break;
 
@@ -123,7 +127,7 @@ public class Solution {
 class T9 {
 		BinarySearchST<String, Integer> st;
 		TST<Integer> tst ;
-		// Bag
+		Bag<String> bag;
 	public T9(BinarySearchST<String, Integer> s) {
 		// your code goes here
 		this.st = s;
@@ -167,6 +171,12 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
+		bag = new Bag<>();
+		System.out.println("input");
+		System.out.println(words);
+		for (String s : words) {
+			System.out.println(st.get(s));
+		}
 		return null;
 	}
 

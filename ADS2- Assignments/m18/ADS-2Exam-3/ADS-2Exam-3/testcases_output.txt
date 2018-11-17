@@ -169,8 +169,22 @@ right
 words
 
 Your Output: 
-Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:64)
+first
+second
+second
+second
+second
+second
+second
+third
+input
+Bag@43a25848
+704
+6
+22
+2
+87
+42
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -222,7 +236,11 @@ paper
 keep
 
 Your Output: 
+input
+null
 Exception in thread "main" java.lang.NullPointerException
-	at Solution.main(Solution.java:77)
+	at T9.getSuggestions(Solution.java:177)
+	at T9.t9(Solution.java:186)
+	at Solution.main(Solution.java:81)
 ----------------------------------------
 
