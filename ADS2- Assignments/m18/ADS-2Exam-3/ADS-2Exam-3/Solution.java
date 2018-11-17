@@ -19,7 +19,7 @@ public class Solution {
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				// String[] tokens
-				// System.out.println(key);
+				System.out.println(key);
 				System.out.println(hash.get(key));
 			}
 			break;
@@ -96,11 +96,23 @@ public class Solution {
 		// your code goes here
 		String[] tokens = toReadFile(file);
 		// System.out.println(tokens[0]);
+			// System.out.println(tokens.length + "------------length");
+
 		for (int i = 0; i < tokens.length; i++) 
 		{
 			// System.out.print(tokens[i] + "  ");
-			st.put(tokens[i] , i);
+			String s = tokens[i].toLowerCase();
+			if (st.contains(s)) {
+				int val = st.get(s);
+				st.put(s , val+1);
+				// System.out.println(st.get(tokens[i]));
+			}else {
+				st.put(s , 1);
+
+			}
 		}
+		// for (String s : st.keys())
+  //           System.out.println(s + " " + st.get(s));
 
 		return st;
 	}

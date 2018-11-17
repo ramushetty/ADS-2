@@ -10,14 +10,22 @@ Expected Output:
 149
 
 Your Output: 
-62967
-60337
-63564
-37929
-61476
-63478
-61689
-62796
+wont
+52
+working
+28
+what
+240
+vegetables
+3
+too
+98
+over
+54
+message
+47
+going
+149
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
