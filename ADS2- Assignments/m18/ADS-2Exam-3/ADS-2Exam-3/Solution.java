@@ -19,7 +19,7 @@ public class Solution {
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				// String[] tokens
-				System.out.println(key);
+				// System.out.println(key);
 				System.out.println(hash.get(key));
 			}
 			break;
