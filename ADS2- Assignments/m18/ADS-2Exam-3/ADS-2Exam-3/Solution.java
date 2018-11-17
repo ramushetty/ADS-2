@@ -133,9 +133,9 @@ class T9 {
         for(String k : st.keys()) {
         	// System.out.println(k);
             tst.put(k, st.get(k));
-            for (int j = 0; j < k.length(); j++) {
-                tst.put(k.substring(j, k.length()), val++);
-            }
+            // for (int j = 0; j < k.length(); j++) {
+            //     tst.put(k.substring(j, k.length()), val++);
+            // }
 
         }
         // for (int i = 0; i < s.size(); i++) {
