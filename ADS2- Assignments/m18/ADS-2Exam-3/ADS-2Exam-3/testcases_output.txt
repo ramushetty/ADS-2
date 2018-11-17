@@ -169,11 +169,17 @@ right
 words
 
 Your Output: 
+j
 hello
+j
 is
+j
 right
+j
 rights
+j
 within
+j
 words
 ----------------------------------------
 
@@ -228,7 +234,7 @@ keep
 Your Output: 
 Exception in thread "main" java.lang.NullPointerException
 	at T9.getSuggestions(Solution.java:179)
-	at T9.t9(Solution.java:214)
+	at T9.t9(Solution.java:215)
 	at Solution.main(Solution.java:81)
 ----------------------------------------
 
