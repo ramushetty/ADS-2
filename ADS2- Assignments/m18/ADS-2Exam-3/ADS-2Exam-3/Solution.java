@@ -54,16 +54,16 @@ public class Solution {
 
 		case "topK":
 			// input003.txt and output003.txt
-		System.out.println("first");
+		// System.out.println("first");
 			t9 = new T9(loadDictionary("/Files/t9.csv"));
 			Bag<String> bag = new Bag<String>();
 			int k = Integer.parseInt(scan.nextLine());
 			while (scan.hasNextLine()) {
-				System.out.println("second");
+				// System.out.println("second");
 				String line = scan.nextLine();
 				bag.add(line);
 			}
-			System.out.println("third");
+			// System.out.println("third");
 			t9.getSuggestions(bag, k);
 			// for (String each : t9.getSuggestions(bag, k)) {
 			// 	System.out.println(each);
@@ -172,7 +172,7 @@ class T9 {
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
 		bag = new Bag<>();
-		System.out.println("input");
+		// System.out.println("input");
 		System.out.println(words);
 		for (String s : words) {
 			System.out.println(st.get(s));
