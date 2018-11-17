@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 52
 28
@@ -10,21 +10,13 @@ Expected Output:
 149
 
 Your Output: 
-wont
 52
-working
 28
-what
 240
-vegetables
 3
-too
 98
-over
 54
-message
 47
-going
 149
 ----------------------------------------
 
