@@ -196,10 +196,11 @@ class T9 {
 	        sorted.putAll(map); 
 	  
 	        // Display the TreeMap which is naturally sorted 
-	        for (Map.Entry<String, Integer> entry : sorted.entrySet())  {
 	        	int j = 0;
+	        
+	        for (Map.Entry<String, Integer> entry : sorted.entrySet())  {
 	        	if (j<k) {
-	        		System.out.println(j);
+	        		// System.out.println(j);
 	            	System.out.println(entry.getKey()) ;   
 	            	j++;
 	        		}
