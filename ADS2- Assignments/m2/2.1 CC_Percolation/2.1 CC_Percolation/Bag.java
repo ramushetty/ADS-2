@@ -55,7 +55,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     /**
      * Determines if empty.
-     *
+     *Time complexity is O(1)
      * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
@@ -67,7 +67,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     /**
      * { returns size }.
-     *
+     *Time complexity is O(1)
      * @return     { return_value }
      */
     public int size() {
@@ -79,7 +79,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     /**
      * { adding item}.
-     *
+     *Time complexity is O(1)
      * @param      item  The item
      */
     public void add(final Item item) {
@@ -96,7 +96,7 @@ public class Bag<Item> implements Iterable<Item> {
       */
     /**
      * { iterator }.
-     *
+     * Time complexity is O(N)
      * @return     { return_values }
      */
     public Iterator<Item> iterator()  {

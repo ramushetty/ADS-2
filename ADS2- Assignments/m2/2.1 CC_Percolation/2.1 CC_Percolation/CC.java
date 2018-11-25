@@ -22,6 +22,7 @@ public class CC {
     }
 
     // depth-first search for a Graph
+    //Time Complexity is 2E + V
     private void dfs(Graph G, int v) {
         marked[v] = true;
         id[v] = count;
@@ -34,7 +35,7 @@ public class CC {
     }
     /**
      * Returns the component id of the connected component containing vertex {@code v}.
-     *
+     *Time Complexity is O(1)
      * @param  v the vertex
      * @return the component id of the connected component containing vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -46,7 +47,7 @@ public class CC {
 
     /**
      * Returns the number of vertices in the connected component containing vertex {@code v}.
-     *
+     *Time Complexity is O(1)
      * @param  v the vertex
      * @return the number of vertices in the connected component containing vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -58,7 +59,7 @@ public class CC {
 
     /**
      * Returns the number of connected components in the graph {@code G}.
-     *
+     *Time Complexity is O(1)
      * @return the number of connected components in the graph {@code G}
      */
     public int count() {
@@ -68,7 +69,7 @@ public class CC {
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
-     *
+     *Time Complexity is O(1)
      * @param  v one vertex
      * @param  w the other vertex
      * @return {@code true} if vertices {@code v} and {@code w} are in the same
@@ -85,7 +86,7 @@ public class CC {
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
-     *
+     *Time Complexity is O(1)
      * @param  v one vertex
      * @param  w the other vertex
      * @return {@code true} if vertices {@code v} and {@code w} are in the same
@@ -102,6 +103,7 @@ public class CC {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    //Time Complexity is O(1)
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)

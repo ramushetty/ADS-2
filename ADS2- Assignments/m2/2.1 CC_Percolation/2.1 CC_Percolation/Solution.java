@@ -39,7 +39,7 @@ class Percolation {
     }
     /**
      * Searches first match.
-     *
+     *Time Complexity is O(1)
      * @param      i     {row}
      * @param      j     {column}
      *
@@ -50,7 +50,7 @@ class Percolation {
     }
     /**
      * Links open sites.
-     *
+     *Time Complexity is O(1)
      * @param      row   The row
      * @param      col   The col
      */
@@ -61,7 +61,7 @@ class Percolation {
     }
     /**
      * {Method to open site}.
-     *
+     *Time Complexity is O(1)
      * @param      row   The row
      * @param      col   The col
      */
@@ -96,7 +96,7 @@ class Percolation {
     }
     /**
      * Determines if the site is open.
-     *
+     *Time Complexity is O(1)
      * @param      row   The row
      * @param      col   The col
      *
@@ -107,7 +107,7 @@ class Percolation {
     }
     /**
      * {Method to determine the num of open sites}.
-     *
+     *Time Complexity is O(1)
      * @return     {num of open sites}
      */
     public int numberOfOpenSites() {
@@ -115,7 +115,7 @@ class Percolation {
     }
     /**
      * {Method to determine does the system percolate}.
-     *
+     *Time Complexity is O(1)
      * @return     {Boolean value}
      */
     public boolean percolates() {
@@ -135,7 +135,7 @@ public final class Solution {
     }
     /**
      * {main function}.
-     *
+     *Time complexity is O(N)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
