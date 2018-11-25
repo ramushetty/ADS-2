@@ -1,213 +1,152 @@
-import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
 /**
  * Class for boggle solver.
  */
 public class BoggleSolver {
     /**
-     * Marked Array.
+     * {TrieST object which consists of values as Integers}.
      */
-    private boolean[][] marked;
+    private TrieST<Integer> dictionaryTrie;
     /**
-     * Rows.
+     * {Set object whose type is String}.
      */
-    private int rows;
+    private Set<String> validWords;
     /**
-     * Cols.
+     * {Marked array which is of type boolean}.
      */
-    private int cols;
-    /**
-     * TST Data Structure bject.
-     */
-    private TST<Integer> tst;
-    /**
-     * Count.
-     */
-    private int count;
-    /**
-     * Queue Object.
-     */
-    private Queue<String> queue;
-    /**
-     * Set of String Type.
-     */
-    private HashSet<String> set;
+    private boolean[][] marked1;
+
     /**
      * Constructs the object.
-     * Time COmplexity is O(N).
-     * N - Dictionary Length.
      *
      * @param      dictionary  The dictionary
      */
     BoggleSolver(final String[] dictionary) {
-        count = 0;
-        set = new HashSet<String>();
-        tst = new TST<Integer>();
+        this.dictionaryTrie = new TrieST<Integer>();
+        this.validWords = new TreeSet<String>();
+        final int x = 11;
+        int[] points = {0, 0, 0, 1, 1, 2, (2 + 1), (2 + 2 + 1), x};
         for (String word : dictionary) {
-            // map.put(word, false);
-            tst.put(word, count++);
+            if (word.length() >= 2 + 2 + 2 + 2) {
+                dictionaryTrie.put(word, points[points.length - 1]);
+            } else {
+                dictionaryTrie.put(word, points[word.length()]);
+            }
         }
-        queue = new Queue<String>();
     }
 
     /**
-     * Uses the DFS.
-     * Time COmplexity is O(rows * cols).
-     *
+     * Gets all valid words which are iterable.
+     *  Time complexity is O(N ^ 2)
      * @param      board  The board
-     */
-    private void check(final BoggleBoard board) {
-        rows = board.rows();
-        cols = board.cols();
-        marked = new boolean[rows][cols];
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                marked = new boolean[rows][cols];
-                dfs("", board, i, j);
-            }
-            marked = new boolean[rows][cols];
-        }
-    }
-
-    /**
-     * Returns the score of string based on length.
-     * Complexity is O(1).
-     * @param      str   The string
-     *
-     * @return     { returns Score }.
-     */
-    public int scoreOf(final String str) {
-        if (str.length() >= 0 && str.length() <= 2) {
-            return 0;
-        } else if (str.length() > 2 && str.length() <= 2 + 2) {
-            return 1;
-        } else if (str.length() == 2 + 2 + 1) {
-            return 2;
-        } else if (str.length() == 2 + 2 + 2) {
-            return 2 + 1;
-        } else if (str.length() == 2 + 2 + 2 + 1) {
-            return 2 + 2 + 1;
-        } else if (str.length() >= 2 + 2 + 2 + 2) {
-            return 2 + 2 + 2 + 2 + 2 + 1;
-        }
-        return 0;
-    }
-
-    /**
-     * { Checks the Index value with in matrix range or not }.
-     * Complexity is O(1).
-     *
-     * @param      i     { index i }
-     * @param      j     { index j }
-     *
-     * @return     { True if in range else false. }
-     */
-    private boolean check(final int i, final int j) {
-        return (i >= 0 && i < rows && j >= 0 && j < cols);
-    }
-
-    /**
-     * Determines if it has prefix.
-     * Complexity is O(1).
-     *
-     * @param      str   The string
-     *
-     * @return     True if has prefix, False otherwise.
-     */
-    private boolean hasPrefix(final String str) {
-        return tst.keyWithPrefix(str);
-    }
-
-    /**
-     * Determines if word.
-     * Complexity is O(tst size).
-     *
-     * @param      str   The string
-     *
-     * @return     True if word, False otherwise.
-     */
-    private boolean isWord(final String str) {
-        return (tst.get(str) != null);
-    }
-
-
-    /**
-     * DFS.
-     * Time Complexity is O(Vertices + Edges).
-     *
-     * @param      str1   The string
-     * @param      b     { Board }
-     * @param      s     { Row }
-     * @param      m     { Column }
-     */
-    private void dfs(final String str1, final BoggleBoard b, final int s,
-        final int m) {
-        // System.out.println(str);
-        String str = str1;
-        if (check(s, m)) {
-            if (str.charAt(str.length() - 1) == 'Q') {
-                    str += "U";
-            }
-            // System.out.println(str);
-            marked[s][m] = true;
-            if (str.length() > 2 && isWord(str)) {
-                // System.out.println(str);
-                set.add(str);
-            }
-        if (check(s - 1, m - 1) && !marked[s - 1][m - 1] && hasPrefix(str)) {
-            // System.out.println(str);
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s - 1, m - 1), b, s - 1, m - 1);
-            marked[s - 1][m - 1] = false;
-        }
-        if (check(s - 1, m) && !marked[s - 1][m] && hasPrefix(str)) {
-            // System.out.println("hai");
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s - 1, m), b, s - 1, m);
-            marked[s - 1][m] = false;
-        }
-        if (check(s - 1, m + 1) && !marked[s - 1][m + 1] && hasPrefix(str)) {
-            // System.out.println("Hai");
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s - 1, m + 1), b, s - 1, m + 1);
-            marked[s - 1][m + 1] = false;
-        }
-        if (check(s, m - 1) && !marked[s][m - 1] && hasPrefix(str)) {
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s, m - 1), b, s, m - 1);
-            marked[s][m - 1] = false;
-        }
-        if (check(s, m + 1) && !marked[s][m + 1] && hasPrefix(str)) {
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s, m + 1), b, s, m + 1);
-            marked[s][m + 1] = false;
-        }
-        if (check(s + 1, m - 1) && !marked[s + 1][m - 1] && hasPrefix(str)) {
-            // marked[s][m] = true;
-            dfs(str + b.getLetter(s + 1, m - 1), b, s + 1, m - 1);
-            marked[s + 1][m - 1] = false;
-        }
-        if (check(s + 1, m + 1) && !marked[s + 1][m + 1] && hasPrefix(str)) {
-            dfs(str + b.getLetter(s + 1, m + 1), b, s + 1, m + 1);
-            marked[s + 1][m + 1] = false;
-        }
-        if (check(s + 1, m) && !marked[s + 1][m] && hasPrefix(str)) {
-            dfs(str + b.getLetter(s + 1, m), b, s + 1, m);
-            marked[s + 1][m] = false;
-        }
-        }
-    }
-    /**
-     * Gets all valid words.
-     * Returns the set of all valid words in the given Boggle board, as an
-     * Iterable.
-     * Complexity is O(rows * Cols).
-     *
-     * @param      board  The board
-     *
+     * 
      * @return     All valid words.
      */
     public Iterable<String> getAllValidWords(final BoggleBoard board) {
-        check(board);
-        return set;
+        marked1 = new boolean[board.rows()][board.cols()];
+        for (int i = 0; i < board.rows(); i++) {
+            for (int j = 0; j < board.cols(); j++) {
+                String sb = appendCharacter("", board.getLetter(i, j));
+                dfs(board, marked1, i, j, sb);
+            }
+        }
+        return validWords;
+    }
+    /**
+     * Appends a character to the string.
+     *
+     * @param      sb    {String}
+     * @param      c     {Character}
+     *
+     * @return     {String}
+     */
+    private String appendCharacter(final String sb, final char c) {
+        String str = sb;
+        if (c == 'Q') {
+            str += "QU";
+            return str;
+        } else {
+            str += c;
+            return str;
+        }
+    }
+    /**
+     * Determines if valid word.
+     *
+     * @param      word  The word
+     *
+     * @return     True if valid word, False otherwise.
+     */
+    private boolean isValidWord(final String word) {
+        if (word.length() <= 2) {
+            return false;
+        }
+        return dictionaryTrie.contains(word);
+    }
+
+    /**
+     * {Method of traversal and finding the valid word}.
+     *
+     * @param      board   The board
+     * @param      marked  The marked
+     * @param      rows    The rows
+     * @param      cols    The cols
+     * @param      word    The word
+     */
+    public void dfs(final BoggleBoard board, final boolean[][] marked,
+                    final int rows, final int cols,
+                    final String word) {
+        if (!dictionaryTrie.hasPrefix(word)) {
+            return;
+        }
+        if (isValidWord(word)) {
+            validWords.add(word);
+        }
+        marked[rows][cols] = true;
+        for (int i = rows - 1; i <= rows + 1; i++) {
+            for (int j = cols - 1; j <= cols + 1; j++) {
+                if (isValidRowColumn(i, j, board) && !marked[i][j]) {
+                    String sequence = appendCharacter(
+                                          word, board.getLetter(i, j));
+                    dfs(board, marked, i, j, sequence);
+                }
+            }
+        }
+        marked[rows][cols] = false;
+    }
+
+    /**
+     * Determines if valid row column.
+     *
+     * @param      row    The row
+     * @param      col    The col
+     * @param      board  The board
+     *
+     * @return     True if valid row column, False otherwise.
+     */
+    private boolean isValidRowColumn(final int row, final int col,
+                                     final BoggleBoard board) {
+        return (row >= 0 && col >= 0
+                && row < board.rows() && col < board.cols());
+    }
+
+
+    /**
+     * {Returns the score of the given word.
+     * if it is in the dictionary, zero otherwise.}
+     *
+     * @param      word  The word
+     *Time complexity is O(1)
+     * @return     {Integer}
+     */
+    public int scoreOf(final String word) {
+        if (word == null) {
+            return 0;
+        }
+        if (dictionaryTrie.contains(word)) {
+            return dictionaryTrie.get(word);
+        }
+        return 0;
     }
 }

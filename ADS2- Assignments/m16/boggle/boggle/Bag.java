@@ -8,51 +8,53 @@
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
 /**
- * The <tt>Bag</tt> class represents a bag (or multiset) of generic items. It
- * supports insertion and iterating over the items in arbitrary order. <p> The
- * <em>add</em>, <em>isEmpty</em>, and <em>size</em>  operation take constant
- * time. Iteration takes time proportional to the numberofitems. <p>
- *
- * <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class for bag.
  *
  * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
-     * Integer N.
+     * { variale n}.
      */
-    private static int n;         // number of elements in bag
+    private int n;         // number of elements in bag
     /**
-     * Node of Element.
+     * { node }.
      */
     private Node first;    // beginning of bag
+
+    // helper linked list class
 
     /**
      * Class for node.
      */
     private class Node {
         /**
-         * Item.
+         * { item }.
          */
         private Item item;
         /**
-         * Next.
+         * { next node }.
          */
         private Node next;
     }
 
-   /**
-     * Create an empty stack.
+    /**
+      * Create an empty stack.
+      */
+    /**
+     * Constructs the object.
      */
     public Bag() {
         first = null;
         n = 0;
     }
 
-   /**
-     * Is the BAG empty?
+    /**
+      * Is the BAG empty?
+      */
+    /**
+     * Determines if empty.
      *
      * @return     True if empty, False otherwise.
      */
@@ -60,17 +62,23 @@ public class Bag<Item> implements Iterable<Item> {
         return first == null;
     }
 
-   /**
-     * Return the number of items in the bag.
+    /**
+      * Return the number of items in the bag.
+      */
+    /**
+     * { returns size }.
      *
-     * @return     { description_of_the_return_value }
+     * @return     { return_value }
      */
     public int size() {
         return n;
     }
 
-   /**
-     * Add the item to the bag.
+    /**
+      * Add the item to the bag.
+      */
+    /**
+     * { adding item}.
      *
      * @param      item  The item
      */
@@ -82,42 +90,29 @@ public class Bag<Item> implements Iterable<Item> {
         n++;
     }
 
+
     /**
-     * Contains Method to check whether it is in Bag or not.
+      * Return an iterator that iterates over the items in the bag.
+      */
+    /**
+     * { iterator }.
      *
-     * @param      item  The item
-     *
-     * @return     { description_of_the_return_value }
-     */
-    public boolean contains(final Item item) {
-        for (Node x = first; x != null; x = x.next) {
-            if (x.item.equals(item)) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
-     *
-     * @return     Iterator.
+     * @return     { return_values }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
 
+    // an iterator, doesn't implement remove() since it's optional
 
     /**
      * Class for list iterator.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * Node creation.
+         * { current }.
          */
         private Node current = first;
-
         /**
          * Determines if it has next.
          *
@@ -127,19 +122,18 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
-         * remove Method.
+         * { remove }.
          */
-        public void remove()      {
+        public void remove() {
             throw new UnsupportedOperationException();
         }
-
         /**
-         * Next Method.
+         * { next }.
          *
-         * @return     { description_of_the_return_value }
+         * @return     {return_value }
          */
         public Item next() {
-            if (!hasNext()) {
+            if (!hasNext())  {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
@@ -147,4 +141,5 @@ public class Bag<Item> implements Iterable<Item> {
             return item;
         }
     }
+
 }

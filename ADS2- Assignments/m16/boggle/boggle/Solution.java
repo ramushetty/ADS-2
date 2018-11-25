@@ -1,4 +1,3 @@
-
 /**
  * Class for solution.
  */
@@ -13,7 +12,7 @@ public final class Solution {
 
     /**
      * Main method.
-     *
+     *time complexity O(1)
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -28,9 +27,8 @@ public final class Solution {
             String boardName = StdIn.readLine();
             BoggleBoard board = new BoggleBoard("/Files/" + boardName);
             int score = 0;
-            for (String word : solver.getAllValidWords(board)) {
-                // System.out.println(word);
-                score += solver.scoreOf(word);
+            for (String w : solver.getAllValidWords(board)) {
+                score += solver.scoreOf(w);
             }
             StdOut.println("Score = " + score);
             break;
@@ -43,9 +41,8 @@ public final class Solution {
                 solver = new BoggleSolver(dictionary);
                 board = null;
                 score = 0;
-                for (String word : solver.getAllValidWords(board)) {
-                    // System.out.println(word);
-                    score += solver.scoreOf(word);
+                for (String w : solver.getAllValidWords(board)) {
+                    score += solver.scoreOf(w);
                 }
                 StdOut.println("Score = " + score);
             } catch (Exception ex) {

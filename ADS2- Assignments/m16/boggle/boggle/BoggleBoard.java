@@ -1,14 +1,4 @@
-/******************************************************************************
- *  Compilation:  javac BoggleBoard.java
- *  Execution:    java  BoggleBoard
- *  Dependencies: StdRandom.java In.java StdOut.java
- *
- *  A data type for Boggle boards.
- *
- ******************************************************************************/
-
 public class BoggleBoard {
-	private Stack<Integer>[] stack;
     // the 16 Boggle dice (1992 version)
     private static final String[] BOGGLE_1992 = {
         "LRYTTE", "VTHRWE", "EGHWNE", "SEOTIS",
@@ -74,10 +64,11 @@ public class BoggleBoard {
             }
         }
     }
-    
+
     /**
      * Initializes a board from the given filename.
      * @param filename the name of the file containing the Boggle board
+     * Time complexity is O(N ^ 2)
      */
     public BoggleBoard(String filename) {
         In in = new In(filename);
@@ -95,7 +86,7 @@ public class BoggleBoard {
                     throw new IllegalArgumentException("invalid character: " + letter);
                 else if (!ALPHABET.contains(letter))
                     throw new IllegalArgumentException("invalid character: " + letter);
-                else 
+                else
                     board[i][j] = letter.charAt(0);
             }
         }
@@ -105,6 +96,7 @@ public class BoggleBoard {
      * Initializes a random m-by-n board, according to the frequency
      * of letters in the English language.
      * @param m the number of rows
+     * Time complexity is O(N ^ 2)
      * @param n the number of columns
      */
     public BoggleBoard(int m, int n) {
@@ -125,6 +117,7 @@ public class BoggleBoard {
      * Initializes a board from the given 2d character array,
      * with 'Q' representing the two-letter sequence "Qu".
      * @param a the 2d character array
+     * Time complexity is O(N ^ 2)
      */
     public BoggleBoard(char[][] a) {
         this.m = a.length;
@@ -146,6 +139,7 @@ public class BoggleBoard {
     /**
      * Returns the number of rows.
      * @return number of rows
+     * Time Complexity is O(1)
      */
     public int rows() {
         return m;
@@ -154,13 +148,10 @@ public class BoggleBoard {
     /**
      * Returns the number of columns.
      * @return number of columns
+     * Time Complexity is O(1)
      */
     public int cols() {
         return n;
-    }
-
-    public int vert() {
-    	return m * n;
     }
 
     /**
@@ -168,6 +159,7 @@ public class BoggleBoard {
      * with 'Q' representing the two-letter sequence "Qu".
      * @param i the row
      * @param j the column
+     * Time Complexity is O(1)
      * @return the letter in row i and column j
      *    with 'Q' representing the two-letter sequence "Qu".
      */
@@ -178,6 +170,7 @@ public class BoggleBoard {
     /**
      * Returns a string representation of the board, replacing 'Q' with "Qu".
      * @return a string representation of the board, replacing 'Q' with "Qu"
+     * Time complexity is O(N ^ 2)
      */
     public String toString() {
         StringBuilder sb = new StringBuilder(m + " " + n + "\n");
@@ -228,5 +221,5 @@ public class BoggleBoard {
         StdOut.println(board4);
         StdOut.println();
     }
-    
+
 }
