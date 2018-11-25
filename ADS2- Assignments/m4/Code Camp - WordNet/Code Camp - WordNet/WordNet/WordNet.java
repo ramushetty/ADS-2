@@ -180,7 +180,7 @@ public class WordNet {
     }
     /**
      * Gets the digraph.
-     * time complexity is nlogn 
+     * time complexity is nlogn
      * @return     The digraph.
      */
     public Digraph getDigraph() {

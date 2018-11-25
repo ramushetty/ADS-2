@@ -112,7 +112,7 @@ public class Stack<Item> implements Iterable<Item> {
 
 
     /**
-     * time complexity is 1
+     * time complexity is 1.
      *
      * @return an iterator to this stack that iterates
      * through the items in LIFO order

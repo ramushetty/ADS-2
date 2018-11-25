@@ -31,7 +31,7 @@ public class SAP {
 
     /**
      * {Length of ancestral path}.
-     *
+     *time complexity is 1 in avg case.
      * @param      v     {Iterable}
      * @param      w     {Iterable}
      *
@@ -57,7 +57,7 @@ public class SAP {
 
     /**
      * {a common ancestor that participates in shortest ancestral path}.
-     *
+     *time complexity is O(N).
      * @param      v     {Iterable}
      * @param      w     {Iterable}
      *
