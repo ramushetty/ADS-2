@@ -46,7 +46,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns true if this queue is empty.
-     *
+     *time complexity is 1 in avg case
      * @return {@code true} if this queue is empty.
      * {@code false} otherwise
      */
@@ -56,7 +56,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the number of items in this queue.
-     *
+     *time complexity is 1 in avg case
      * @return the number of items in this queue
      */
     public int size() {
@@ -65,7 +65,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns the item least recently added to this queue.
-     *
+     *time complexity is 1 in avg case
      * @return the item least recently added to this queue
      */
     public Item peek() {
@@ -74,7 +74,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this queue.
-     *
+     *time complexity is 1 in avg case
      * @param  item the item to add
      */
     public void enqueue(final Item item) {
@@ -92,7 +92,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Removes and returns the item on this queue that was least recently added.
-     *
+     *time complexity is 1 in avg case
      * @return the item on this queue that was least recently added
      */
     public Item dequeue() {
@@ -107,7 +107,7 @@ public class Queue<Item> implements Iterable<Item> {
 
     /**
      * Returns a string representation of this queue.
-     *
+     *time complexity is O(N)
      * @return the sequence of items in FIFO order, separated by spaces
      */
     public String toString() {
@@ -123,6 +123,7 @@ public class Queue<Item> implements Iterable<Item> {
      *
      * @return an iterator that iterates over the items
      * in this queue in FIFO order
+     * time complexity is 1 in avg case
      */
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
@@ -149,7 +150,7 @@ public class Queue<Item> implements Iterable<Item> {
 
         /**
          * Determines if it has next.
-         *
+         *time complexity is 1 in avg case
          * @return     True if has next, False otherwise.
          */
         public boolean hasNext() {
@@ -164,7 +165,7 @@ public class Queue<Item> implements Iterable<Item> {
 
         /**
          * {Method for finding the next}.
-         *
+         *time complexity is 1 in avg case
          * @return     {Item}
          */
         public Item next() {

@@ -133,7 +133,7 @@ public class Digraph {
         
     /**
      * Returns the number of vertices in this digraph.
-     *
+     *time complexity is 1 in avg case
      * @return the number of vertices in this digraph
      */
     public int V() {
@@ -142,7 +142,7 @@ public class Digraph {
 
     /**
      * Returns the number of edges in this digraph.
-     *
+     *time complexity is 1 in avg case
      * @return the number of edges in this digraph
      */
     public int E() {
@@ -158,7 +158,7 @@ public class Digraph {
 
     /**
      * Adds the directed edge v→w to this digraph.
-     *
+     *time complexity is 1 in avg case
      * @param  v the tail vertex
      * @param  w the head vertex
      * @throws IllegalArgumentException unless both {@code 0 <= v < V} and {@code 0 <= w < V}
@@ -173,7 +173,7 @@ public class Digraph {
 
     /**
      * Returns the vertices adjacent from vertex {@code v} in this digraph.
-     *
+     *time complexity is 1 in avg case
      * @param  v the vertex
      * @return the vertices adjacent from vertex {@code v} in this digraph, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -186,7 +186,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident from vertex {@code v}.
      * This is known as the <em>outdegree</em> of vertex {@code v}.
-     *
+     *time complexity is 1 in avg case
      * @param  v the vertex
      * @return the outdegree of vertex {@code v}               
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -199,7 +199,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident to vertex {@code v}.
      * This is known as the <em>indegree</em> of vertex {@code v}.
-     *
+     *time complexity is 1 in avg case
      * @param  v the vertex
      * @return the indegree of vertex {@code v}               
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
@@ -211,7 +211,7 @@ public class Digraph {
 
     /**
      * Returns the reverse of the digraph.
-     *
+     *time complexity is 1 in avg case
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
@@ -226,7 +226,7 @@ public class Digraph {
 
     /**
      * Returns a string representation of the graph.
-     *
+     *time complexity is O(N).
      * @return the number of vertices <em>V</em>, followed by the number of edges <em>E</em>,  
      *         followed by the <em>V</em> adjacency lists
      */

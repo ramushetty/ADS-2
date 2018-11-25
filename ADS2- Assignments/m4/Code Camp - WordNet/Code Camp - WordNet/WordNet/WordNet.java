@@ -49,7 +49,7 @@ public class WordNet {
     private Digraph digraphObj;
     /**
      * Constructs the object.
-     *
+     * time complexity is nlogn
      * @param      synsets    The synsets
      * @param      hypernyms  The hypernyms
      */
@@ -64,7 +64,7 @@ public class WordNet {
 
     /**
      * {returns all WordNet nouns}.
-     *
+     * time complexity nlogn
      * @return     {Iterable}
      */
     public Iterable<String> nouns() {
@@ -75,7 +75,7 @@ public class WordNet {
      * Determines if noun.
      *
      * @param      word  The word
-     *
+     * time complexity nlogn
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(final String word) {
@@ -116,7 +116,7 @@ public class WordNet {
 
     /**
      * Reads synsets.
-     *
+     * time complexity is nlogn
      * @param      s          {String}
      * @param      hypernyms  The hypernyms
      */
@@ -147,7 +147,7 @@ public class WordNet {
     }
     /**
      * Reads hyper nyms.
-     *
+     * time complexity is n*n
      * @param      s      {String}
      * @param      d      {Digraph}
      * @param      count1  The count of vertices
@@ -180,7 +180,7 @@ public class WordNet {
     }
     /**
      * Gets the digraph.
-     *
+     * time complexity is nlogn 
      * @return     The digraph.
      */
     public Digraph getDigraph() {

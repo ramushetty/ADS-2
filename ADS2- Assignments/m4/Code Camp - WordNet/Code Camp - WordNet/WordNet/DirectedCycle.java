@@ -39,7 +39,7 @@ public class DirectedCycle {
     /**
      * {check that algorithm computes
      * either the topological order or finds a directed cycle}.
-     *
+     *time complexity is 1 in avg case
      * @param      digraph     {Digraph}
      * @param      v     {Source Vertex}
      */
@@ -72,6 +72,7 @@ public class DirectedCycle {
      * Does the digraph have a directed cycle?
      * @return {@code true} if the digraph has a directed cycle,
      * {@code false} otherwise
+     * time complexity is 1 in avg case
      */
     public boolean hasCycle() {
         return cycle != null;
@@ -90,7 +91,7 @@ public class DirectedCycle {
 
     /**
      * {certify that digraph has a directed cycle if it reports one}.
-     *
+     *time complexity is O(N).
      * @return     {Boolean}
      */
     private boolean check() {

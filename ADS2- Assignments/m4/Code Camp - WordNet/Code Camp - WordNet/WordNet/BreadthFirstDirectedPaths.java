@@ -39,6 +39,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     // BFS from single source
+    //time complexity is 1 in avg case.
     private void bfs(Digraph G, int s) {
         Queue<Integer> q = new Queue<Integer>();
         marked[s] = true;
@@ -58,6 +59,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     // BFS from multiple sources
+    //time complexity is 1 in avg case
     private void bfs(Digraph G, Iterable<Integer> sources) {
         Queue<Integer> q = new Queue<Integer>();
         for (int s : sources) {
@@ -81,6 +83,7 @@ public class BreadthFirstDirectedPaths {
     /**
      * Is there a directed path from the source {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
+     * time complexity is 1 in avg case
      * @return {@code true} if there is a directed path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -93,6 +96,7 @@ public class BreadthFirstDirectedPaths {
      * Returns the number of edges in a shortest path from the source {@code s}
      * (or sources) to vertex {@code v}?
      * @param v the vertex
+     * time complexity is 1 in avg case
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -105,6 +109,7 @@ public class BreadthFirstDirectedPaths {
      * Returns a shortest path from {@code s} (or sources) to {@code v}, or
      * {@code null} if no such path.
      * @param v the vertex
+     * time complexity is O(N).
      * @return the sequence of vertices on a shortest path, as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -121,6 +126,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    //time complexity is 1 in avg case
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
@@ -128,6 +134,7 @@ public class BreadthFirstDirectedPaths {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    //time complexity is O(N).
     private void validateVertices(Iterable<Integer> vertices) {
         if (vertices == null) {
             throw new IllegalArgumentException("argument is null");

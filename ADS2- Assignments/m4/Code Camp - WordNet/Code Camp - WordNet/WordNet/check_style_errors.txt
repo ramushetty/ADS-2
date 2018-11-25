@@ -17,33 +17,33 @@ Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:31:46: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:31:49: Parameter sources should be final. [FinalParameters]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:35: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:22: Parameter G should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:42:33: Parameter s should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:22: Parameter G should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:61:33: Parameter sources should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:82: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:87:30: Parameter v should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:99:23: Parameter v should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:111:37: Parameter v should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:114: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:117: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:124:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:124:33: Parameter v should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:125:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:126: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:127:94: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:131:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:131:35: Parameter vertices should be final. [FinalParameters]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:135:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:97: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:98: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:43:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:43:22: Parameter G should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:43:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:43:33: Parameter s should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:63:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:63:22: Parameter G should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:63:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:63:33: Parameter sources should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:84: Line is longer than 80 characters (found 91). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:90:30: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:103:23: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:116:37: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:119: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:122: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:130:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:130:33: Parameter v should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:131:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:132: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:133: Line is longer than 80 characters (found 97). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:133:93: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:133:94: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:138:35: Parameter vertices should be final. [FinalParameters]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:142:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:145: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:145:97: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\BreadthFirstDirectedPaths.java:145:98: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...
@@ -272,7 +272,9 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\Stack.java:114: First sentence should end with a period. [JavadocStyle]
 Audit done.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
@@ -406,4 +408,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\ADS-2\ADS-2\ADS2- Assignments\m4\Code Camp - WordNet\Code Camp - WordNet\WordNet\WordNet.java:183: Line has trailing spaces. [RegexpSingleline]
 Audit done.
+Checkstyle ends with 2 errors.

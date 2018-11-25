@@ -10,7 +10,7 @@ public final class Solution {
     }
     /**
      * {main function}.
-     *
+     *time complexity for the main method is 1.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
