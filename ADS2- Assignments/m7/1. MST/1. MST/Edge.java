@@ -79,7 +79,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns a string representation of this edge.
-     * time complexity O(v)
+     * time complexity O(N)
      * @return a string representation of this edge
      */
     public String toString() {
