@@ -18,7 +18,7 @@ public class Quick3string {
 
     /**
      * Rearranges the array of strings in ascending order.
-     *
+     *Time complexity is O(wn)
      * @param a the array to be sorted
      */
     public static void sort(final String[] a) {
@@ -31,7 +31,7 @@ public class Quick3string {
 
     /**
      * { charat}.
-     *
+     *Time complexity is O(1)
      * @param      s     { string type }
      * @param      d     { integer }
      *
@@ -50,7 +50,7 @@ public class Quick3string {
 
     /**
      * sort function.
-     *
+     *Time complexity is O(wn)
      * @param      a     { String array }
      * @param      lo    The lower
      * @param      hi    The higher
@@ -91,7 +91,7 @@ public class Quick3string {
 
     /**
      * { insertion sort}.
-     *
+     *Time complexity is O(N^2)
      * @param      a     { string array }
      * @param      lo    The lower
      * @param      hi    The higher
@@ -110,7 +110,7 @@ final String[] a, final int lo, final int hi, final int d) {
 
     /**
      * exchanges elements in array.
-     *
+     *Time complexity is O(1)
      * @param      a     { string array }
      * @param      i     { first element}
      * @param      j     { second element  }
@@ -136,7 +136,7 @@ final String[] a, final int lo, final int hi, final int d) {
      * @param      v     { string v }
      * @param      w     { string w }
      * @param      d     { integer d }
-     *
+     *Time complexity is 1
      * @return     {returns true or false }
      */
     private static boolean less(final String v, final String w, final int d) {
@@ -156,7 +156,7 @@ final String[] a, final int lo, final int hi, final int d) {
 
     /**
      * Determines if sorted.
-     *
+     * Timce complexity is O(N)
      * @param      a     {string array }
      *
      * @return     True if sorted, False otherwise.
