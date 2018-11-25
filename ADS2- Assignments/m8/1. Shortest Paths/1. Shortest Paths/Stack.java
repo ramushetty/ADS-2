@@ -59,7 +59,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**
      * Adds the item to this stack.
-     *
+     * time complexity is 1
      * @param  item the item to add
      */
     public void push(final Item item) {
@@ -72,6 +72,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**
      * Removes and returns the item most recently added to this stack.
+     * time complexity is 1
      *
      * @return the item most recently added
      */
@@ -86,6 +87,7 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Returns (but does not remove) the item most recently
      * added to this stack.
+     * time complexity is 1
      *
      * @return the item most recently added to this stack
      */
@@ -95,6 +97,7 @@ public class Stack<Item> implements Iterable<Item> {
 
     /**
      * Returns a string representation of this stack.
+     * time complexity is O(N)
      *
      * @return the sequence of items in this stack in LIFO order.
      */
@@ -109,6 +112,7 @@ public class Stack<Item> implements Iterable<Item> {
 
 
     /**
+     * time complexity is 1.
      *
      * @return an iterator to this stack that iterates
      * through the items in LIFO order
@@ -137,6 +141,7 @@ public class Stack<Item> implements Iterable<Item> {
         }
         /**
          * Determines if it has next.
+         * time complexity is 1
          *
          * @return     True if has next, False otherwise.
          */
@@ -144,6 +149,8 @@ public class Stack<Item> implements Iterable<Item> {
             return current != null;
         }
         /**
+         * time complexity is 1.
+         *
          * {Remove method}.
          */
         public void remove() {
@@ -152,6 +159,7 @@ public class Stack<Item> implements Iterable<Item> {
 
         /**
          * {Next method}.
+         * time complexity is 1
          *
          * @return     { description_of_the_return_value }
          */

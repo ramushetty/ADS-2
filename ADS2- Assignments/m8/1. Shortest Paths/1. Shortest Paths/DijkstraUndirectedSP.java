@@ -63,14 +63,14 @@ public class DijkstraUndirectedSP {
      * @param  v the destination vertex.
      * @return the length of a shortest path between the source vertex
      * and the vertex.
-     *
+     *Time complexity is O(1)
      */
     public double distTo(final int v) {
         return distTo[v];
     }
 
     /**
-     *
+     *Time complexity is O(1).
      * @param  v the destination vertex
      * @return {@code true} if there is a path between vertex
      * {@code s} to vertex {@code v};

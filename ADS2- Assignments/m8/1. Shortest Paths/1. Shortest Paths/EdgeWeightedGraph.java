@@ -31,7 +31,7 @@ public class EdgeWeightedGraph {
     }
     /**
      * Returns the number of vertices in this edge-weighted graph.
-     *
+     *Time complexity is 1
      * @return the number of vertices in this edge-weighted graph
      */
     public int vertices() {
@@ -40,7 +40,7 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns the number of edges in this edge-weighted graph.
-     *
+     *Time complexity is 1
      * @return the number of edges in this edge-weighted graph
      */
     public int edge() {
@@ -62,7 +62,7 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns the edges incident on vertex {@code v}.
-     *
+     *Time complexity is 1
      * @param  v the vertex
      * @return the edges incident on vertex {@code v}
      */
@@ -72,7 +72,7 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns the degree of vertex {@code v}.
-     *
+     *Time complexity is 1
      * @param  v the vertex
      * @return the degree of vertex {@code v}
      */
@@ -82,7 +82,7 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns all edges in this edge-weighted graph.
-     *
+     *Time complexity is 1
      * @return all edges in this edge-weighted graph, as an iterable
      */
     public Iterable<Edge> edges() {

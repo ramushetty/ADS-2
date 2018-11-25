@@ -33,7 +33,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns the weight of this edge.
-     *
+     *Time complexity is 1
      * @return the weight of this edge
      */
     public double weight() {
@@ -42,7 +42,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns either endpoint of this edge.
-     *
+     *Time complexity is 1
      * @return either endpoint of this edge
      */
     public int either() {
@@ -56,6 +56,7 @@ public class Edge implements Comparable<Edge> {
      * @return the other endpoint of this edge
      * @throws IllegalArgumentException if the vertex is not one of the
      * endpoints of this edge
+     * Time complexity is 1
      */
     public int other(final int vertex) {
         if (vertex == v) {
@@ -70,7 +71,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Compares two edges by weight.
-     *
+     *Time complexity is 1
      * @param  that the other edge
      * @return a negative integer, zero, or positive integer.
      */
@@ -81,7 +82,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns a string representation of this edge.
-     *
+     *Time complexity is O(N)
      * @return a string representation of this edge
      */
     public String toString() {

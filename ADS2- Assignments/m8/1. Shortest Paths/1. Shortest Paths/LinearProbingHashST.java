@@ -56,6 +56,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * @return {@code true} if this symbol table is empty;
      * {@code false} otherwise
+     * Time complexity is O(1)
      */
     public boolean isEmpty() {
         return size() == 0;
@@ -65,6 +66,7 @@ public class LinearProbingHashST<Key, Value> {
      * @param  key the key.
      * @return {@code true} if this symbol table contains {@code key};
      * {@code false} otherwise
+     * Time complexity is O(1)
      */
     public boolean contains(final Key key) {
         return get(key) != null;
@@ -86,7 +88,7 @@ public class LinearProbingHashST<Key, Value> {
 
     /**
      * {resizes the hash table to the given capacity}.
-     *
+     *Time complexity is O(N)
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -110,6 +112,7 @@ public class LinearProbingHashST<Key, Value> {
      * from this symbol table
      * if the specified value is {@code null}.
      * @param  key the key
+     *  Time complexity is O(log(N))
      * @param  val the value
      */
     public void put(final Key key, final Value val) {
@@ -137,6 +140,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Returns the value associated with the specified key.
      * @param key the key
+     *  Time complexity is O(log(N))
      * @return the value associated with {@code key};
      * {@code null} if no such value
      */
@@ -152,6 +156,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Removes the specified key and its.
      * associated value from symbol table
+     *  Time complexity is O(log(N))
      * @param  key the key
      */
     public void delete(final Key key) {
@@ -188,6 +193,7 @@ public class LinearProbingHashST<Key, Value> {
     /**
      * Returns all keys in this symbol table as an {@code Iterable}.
      * @return all keys in this symbol table
+     * Time complexity is O(N)
      */
     public Iterable<Key> keys() {
         Queue<Key> queue = new Queue<Key>();
